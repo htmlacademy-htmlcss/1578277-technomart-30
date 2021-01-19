@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Татьяна Сысуева](https://up.htmlacademy.ru/htmlcss/30/user/1578277).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Хабиров](https://htmlacademy.ru/profile/alex_khab).
 
 ---
 
