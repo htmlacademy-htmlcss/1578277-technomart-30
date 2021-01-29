@@ -4,19 +4,24 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page">
   <header class="page-header">
     <div class="page-header__menu menu">
       <a href="index.html" class="menu__link logo">
-        <img src="https://via.placeholder.com/220x47" width="220" height="47" alt="Логотип компании Техномарт"
+        <img src="img/logo.svg" width="108" height="18" alt="Логотип компании Техномарт"
           class="logo__img">
       </a>
       <form class="menu__search search">
         <button type="submit" class="search__btn"></button>
-        <label for="search__field"></label>
-        <input type="search" placeholder="Поиск" id="search__field" name="q" class="search__field">
+        <label for="search__field">
+          <input type="search" placeholder="Поиск" id="search__field" name="q" class="search__field">
+        </label>
       </form>
       <ul class="menu__item checkout">
         <li class="checkout__item">
@@ -43,10 +48,12 @@
       <div class="header-info__user-menu user-menu">
         <div class="user-menu__inner">
           <a href="#" class="user-menu__link user-menu__link--login"></a>
-          <a href="#" class="user-menu__link user-menu--exit"></a>
+          <a href="#" class="user-menu__link user-menu__link--exit"></a>
         </div>
+        <div class="user-menu__box">
           <a href="#" class="user-menu__link user-menu__link--order">Мои заказы</a>
           <a href="#" class="user-menu__link user-menu__link--cabinet">Личный кабинет</a>
+        </div>
       </div>
     </div>
     <nav class="page-header__submenu nav">
@@ -76,59 +83,61 @@
     </nav>
   </header>
   <main class="page-content">
-    <h1 class="page-content__ешеду">Перфораторы</h1>
-    <div class="page-content__header breadcrumbs">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-          <a href="index.html" class="breadcrumbs__link breadcrumbs__link--home"></a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="#" class="breadcrumbs__link">Каталог</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="#" class="breadcrumbs__link">Инструменты</a>
-        </li>
-        <li class="breadcrumbs__item">
-          Перфораторы
-        </li>
-      </ul>
-    </div>
+    <h1 class="page-content__title">Перфораторы</h1>
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a href="index.html" class="breadcrumbs__link breadcrumbs__link--home"></a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Каталог</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Инструменты</a>
+      </li>
+      <li class="breadcrumbs__item">
+        Перфораторы
+      </li>
+    </ul>
     <div class="page-content__wrapper catalog">
-
       <section class="catalog__filter filter">
         <h2 class="filter__title">Фильтр</h2>
         <form class="filter__form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <div class="filter__range rang">
-            <div class="rang__price">
+          <div class="filter__range range">
+            <div class="range__price">
               <label for="price">Цена:</label>
               <input type="range" id="price" name="price" min="10000" max="30000" step="1000">
             </div>
-            <div class="rang__results">
-              <input type="text" placeholder="0" class="rang__start"> -
-              <input type="text" placeholder="30000" class="rang__end">
+            <div class="range__results">
+              <label for="">
+                <input type="text" placeholder="0" class="range__start">
+              </label>
+               -
+               <label for="">
+                 <input type="text" placeholder="30000" class="range__end">
+               </label>
             </div>
           </div>
-          <fieldset class="filter__brends brends-filter">
-            <legend class="brends-filter__text">Производители:</legend>
-            <ul class="brends-filter__list">
-              <li class="brends-filter__item">
-                <input type="checkbox" name="bosch" id="bosch" checked>
+          <fieldset class="filter__brands brands-filter">
+            <legend class="filter__text">Производители:</legend>
+            <ul class="brands-filter__list">
+              <li class="brands-filter__item">
+                <input type="checkbox" name="bosch" id="bosch" value="bosch" checked>
                 <label for="bosch">Bosch</label>
               </li>
-              <li class="brends-filter__item">
-                <input type="checkbox" name="interskol" id="interskol">
+              <li class="brands-filter__item">
+                <input type="checkbox" name="interskol" id="interskol" value="interskol">
                 <label for="interskol">Интерскол</label>
               </li>
-              <li class="brends-filter__item">
-                <input type="checkbox" name="makita" id="makita" checked>
+              <li class="brands-filter__item">
+                <input type="checkbox" name="makita" id="makita" value="makita" checked>
                 <label for="makita">Makita</label>
               </li>
-              <li class="brends-filter__item">
-                <input type="checkbox" name="dewalt" id="dewalt">
+              <li class="brands-filter__item">
+                <input type="checkbox" name="dewalt" id="dewalt" value="dewalt">
                 <label for="dewalt">Dewalt</label>
               </li>
-              <li class="brends-filter__item">
-                <input type="checkbox" name="hitachi" id="hitachi">
+              <li class="brands-filter__item">
+                <input type="checkbox" name="hitachi" id="hitachi" value="hitachi">
                 <label for="hitachi">Hitachi</label>
               </li>
             </ul>
@@ -137,16 +146,16 @@
             <legend class="power-filter__text">Питание:</legend>
             <ul class="power-filter__list">
               <li class="power-filter__item">
-                <input type="checkbox" name="battery" id="battery" checked>
+                <input type="radio" name="battery" id="battery" value="battery" checked>
                 <label for="battery">Аккумуляторные</label>
               </li>
               <li class="power-filter__item">
-                <input type="checkbox" name="net" id="net">
+                <input type="radio" name="net" id="net" value="net">
                 <label for="net">Сетевые</label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button type="submit" class="filter__btn">Показать</button>
         </form>
       </section>
       <section class="catalog__cards cards">
@@ -155,31 +164,31 @@
           <span class="sort__note">Сортировка</span>
           <ul class="sort__list">
             <li class="sort__item">
-              <button type="button" class="sort__btn">По цене</button>
+              <a href="#" class="sort__link">По цене</a>
             </li>
             <li class="sort__item">
-              <button type="button" class="sort__btn">По типу</button>
+              <a href="#" class="sort__link">По типу</a>
             </li>
             <li class="sort__item">
-              <button type="button" class="sort__btn">По функционалу</button>
+              <a href="#" class="sort__link">По функционалу</a>
             </li>
             <li class="sort__item sort__item--arrow-top">
-              <button type="button" class="sort__btn"></button>
+              <a href="#" class="sort__link"></a>
             </li>
             <li class="sort__item sort__item--arrow-bottom">
-              <button type="button" class="sort__btn"></button>
+              <a href="#" class="sort__link"></a>
             </li>
           </ul>
         </div>
         <article class="cards__item card">
-          <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Перфоратор BOSCH BFG 6000"
+          <img src="img/card/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"
             class="card__img">
           <h3 class="card__title">Перфоратор BOSCH BFG 6000</h3>
           <span class="card__prace card__prace--old">30 500 Р.</span>
           <span class="card__prace card__prace--new">25 500 Р.</span>
         </article>
         <article class="cards__item card">
-          <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Перфоратор BOSCH BFG 6000"
+          <img src="img/card/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"
             class="card__img">
           <h3 class="card__title">Перфоратор BOSCH BFG 6000</h3>
           <span class="card__prace card__prace--old">30 500 Р.</span>
@@ -195,42 +204,42 @@
           <span class="card__prace card__prace--new">15 500 Р.</span>
         </article>
         <article class="cards__item card card--new">
-          <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Перфоратор BOSCH BFG 3000"
+          <img src="img/card/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"
             class="card__img">
           <h3 class="card__title">Перфоратор BOSCH BFG 3000</h3>
           <span class="card__prace card__prace--old">22 500 Р.</span>
           <span class="card__prace card__prace--new">15 500 Р. </span>
         </article>
         <article class="cards__item card">
-          <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Перфоратор BOSCH BFG 6000"
+          <img src="img/card/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"
             class="card__img">
           <h3 class="card__title">Перфоратор BOSCH BFG 6000</h3>
           <span class="card__prace card__prace--old">30 500 Р.</span>
           <span class="card__prace card__prace--new">25 500 Р.</span>
         </article>
         <article class="cards__item card card--new">
-          <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Перфоратор BOSCH BFG 2000"
+          <img src="img/card/bosch2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"
             class="card__img">
           <h3 class="card__title"> Перфоратор BOSCH BFG 2000 </h3>
           <span class="card__prace card__prace--old">22 500 Р.</span>
           <span class="card__prace card__prace--new">12 500 Р.</span>
         </article>
         <article class="cards__item card card--new">
-          <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Перфоратор BOSCH BFG 3000"
+          <img src="img/card/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"
             class="card__img">
           <h3 class="card__title">Перфоратор BOSCH BFG 3000</h3>
           <span class="card__prace card__prace--old">22 500 Р.</span>
           <span class="card__prace card__prace--new">15 500 Р. </span>
         </article>
         <article class="cards__item card">
-          <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Перфоратор BOSCH BFG 6000"
+          <img src="img/card/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"
             class="card__img">
           <h3 class="card__title">Перфоратор BOSCH BFG 6000</h3>
           <span class="card__prace card__prace--old">30 500 Р.</span>
           <span class="card__prace card__prace--new">25 500 Р.</span>
         </article>
         <article class="cards__item card card--new">
-          <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Перфоратор BOSCH BFG 2000"
+          <img src="img/card/bosch2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"
             class="card__img">
           <h3 class="card__title"> Перфоратор BOSCH BFG 2000 </h3>
           <span class="card__prace card__prace--old">22 500 Р.</span>
@@ -254,7 +263,7 @@
         </ul>
       </div>
     </div>
-    <aside class="page-content__aside aside">
+    <section class="page-content__text aside">
       <h2 class="aside__title">Пара слов о перфораторах</h2>
       <p class="aside__text">
         Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления
@@ -264,12 +273,12 @@
         В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
         дрель.
       </p>
-    </aside>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper footer">
       <a href="#" class="footer__link logo">
-        <img src="https://via.placeholder.com/220x47" width="220" height="47" alt="" class="logo__img">
+        <img src="img/logo.png" width="220" height="47" alt="Логотип компании Техномарт" class="logo__img">
       </a>
       <ul class="footer__nav footer-nav">
         <li class="footer-nav__item">
@@ -339,7 +348,7 @@
       </p>
     </div>
   </footer>
-  <section class="modal-window">
+  <section class="modal-window modal-window--cart">
     <h2 class="visually-hidden">Информация о добавлении томара в корзину</h2>
     <p class="modal-window__text">Товар добавлен в корзину</p>
     <div class="modal-window__wrap">
