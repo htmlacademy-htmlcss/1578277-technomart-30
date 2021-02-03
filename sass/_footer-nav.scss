@@ -1,0 +1,9 @@
+.footer-nav {
+  margin: 0;
+}
+.footer-nav__link {
+  color: #F3F7F9;
+  &--yellow {
+    color: var(--special-yellowlight);
+  }
+}

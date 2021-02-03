@@ -1,0 +1,13 @@
+.search__btn {
+  visibility: hidden;
+}
+
+.search__field {
+  background-color: inherit;
+  border: none;
+  &::-webkit-input-placeholder {
+    font-size: 18px;
+    color: var(--white);
+  }
+}
+

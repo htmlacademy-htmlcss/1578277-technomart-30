@@ -1,0 +1,20 @@
+
+.header-contact__tel {
+  display: inline-block;
+  width: auto;
+  height: 30px;
+  padding: 7px 45px 8px 74px;
+
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+
+  border: 3px solid var(--white);
+}
+
+.header-contact__address {
+  font-size: 14px;
+  color: var(--basic-darkblue);
+}

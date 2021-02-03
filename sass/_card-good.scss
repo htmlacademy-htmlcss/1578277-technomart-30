@@ -1,0 +1,41 @@
+.card-good {
+  display: block;
+  width: 220px;
+  height: 318px;
+
+  font: normal bold 18px/20px "PT Sans", Tahoma, sans-serif;
+  text-align: center;
+
+  border: 1px solid var(--border-card);
+}
+
+.card-good__prace {
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.card-good__prace--old {
+  text-decoration-line: line-through;
+  color: var(--basic-greylight);
+}
+
+.card-good__prace--new {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 270px;
+  height: 38px;
+  padding-left: 32px;
+
+
+  color: var(--white);
+
+  background-color: var(--basic-red);
+ background: linear-gradient(-45deg, transparent 15px, var(--basic-red) 0) bottom left,
+             linear-gradient(-135deg, transparent 15px, var(--basic-red) 0) top left;
+background-size: 50% 50%;
+background-repeat: no-repeat;
+}

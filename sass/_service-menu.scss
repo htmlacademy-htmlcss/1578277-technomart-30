@@ -1,0 +1,36 @@
+
+.service-menu {
+  width: 240px;
+  padding-left: 0;
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--white);
+
+  background-color: var(--basic-darkblue);
+}
+
+.service-menu__item {
+   display: flex;
+   align-items: center;
+   height: 61px;
+   padding-left: 22px; //почему фокус не подходит?
+   &:hover {
+    color: var(--basic-darkblue);
+    background-color: var(--white);
+  }
+}
+
+.service-menu__item--delivery {
+  border-bottom: solid 1px #293449;
+}
+
+.service-menu__item--guarantee {
+  border-top: solid 1px #405069;
+  border-bottom: solid 1px #293449;
+}
+
+.service-menu__item--credit {
+  border-top: solid 1px #405069;
+}
