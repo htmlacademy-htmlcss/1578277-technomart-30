@@ -1,0 +1,45 @@
+.card {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
+
+  &--materials {
+    background-color: var(--special-yellow);
+  }
+
+  &--tools {
+    background-color: var(--special-blue);
+  }
+
+  &--machinery {
+    background-color: var(--special-lilac);
+  }
+
+  &--sale {
+    background-color: var(--special-greenlight);
+  }
+
+  &--delivery {
+    background-color: var(--special-yellow);
+  }
+}
+
+.card__title {
+  margin: 0;
+}
+
+.card__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+
+  background: rgba(255, 255, 255, 0.3);
+}

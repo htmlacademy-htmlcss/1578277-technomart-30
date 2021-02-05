@@ -1,0 +1,26 @@
+.service {
+  background-color: var(--basic-backgraund);
+}
+
+.service__title {
+  margin: 0;
+
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-darkblue);
+}
+
+.service__text {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.service__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

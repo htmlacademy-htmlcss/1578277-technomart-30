@@ -1,0 +1,24 @@
+.footer {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+
+  background-color: var(--basic-darkblue);
+
+  &--submenu {
+    background-color: var(--basic-dark);
+  }
+}
+
+.footer__copyright {
+  max-width: 227px;
+  margin: 0;
+}
+
+.footer__text {
+  margin: 0;
+}
+
+.footer__link {
+  color: var(--special-yellowlight);
+}

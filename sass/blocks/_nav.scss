@@ -1,0 +1,13 @@
+.nav {
+  background-color: var(--basic-darkblue);
+
+  &__link {
+   color: var(--white);
+ }
+
+  &__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+ }
+}

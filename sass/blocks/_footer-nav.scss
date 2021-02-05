@@ -1,0 +1,16 @@
+.footer-nav {
+  margin: 0;
+}
+
+.footer-nav__link {
+  color: var(--special-ligtpink);
+  &--yellow {
+    color: var(--special-yellowlight);
+  }
+}
+
+.footer__nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
