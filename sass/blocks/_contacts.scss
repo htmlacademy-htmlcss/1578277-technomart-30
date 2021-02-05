@@ -1,7 +1,9 @@
 .contacts {
-  margin-bottom: 10px; //убрать потом
+  margin-bottom: 10px;
 }
 .contacts__title {
+  margin: 0;
+
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -9,17 +11,16 @@
 }
 
 .contacts__text {
-  font: 13px/24px "PT Sans", Tahoma, sans-serif;
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
 }
-
 
 .contacts__btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
-  height: 38px;
-
 
   font-size: 14px;
   line-height: 18px;

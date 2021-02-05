@@ -1,35 +1,38 @@
 .card {
-  display: block;
-  width: 300px;
-  height: 123px;
-
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   color: var(--white);
+
   &--materials {
     background-color: var(--special-yellow);
   }
+
   &--tools {
     background-color: var(--special-blue);
   }
+
   &--machinery {
     background-color: var(--special-lilac);
   }
+
   &--sale {
     background-color: var(--special-greenlight);
   }
+
   &--delivery {
     background-color: var(--special-yellow);
   }
+}
+
+.card__title {
+  margin: 0;
 }
 
 .card__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 135px;
-  height: 38px;
 
   font-size: 14px;
   font-weight: normal;

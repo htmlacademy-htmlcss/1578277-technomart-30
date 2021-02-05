@@ -4,6 +4,7 @@
   color: var(--white);
 
   background-color: var(--basic-darkblue);
+
   &--submenu {
     background-color: var(--basic-dark);
   }
@@ -14,12 +15,8 @@
   margin: 0;
 }
 
-.footer__feedback {
-  width: 137px;
-}
-
 .footer__text {
-  width: 98px;
+  margin: 0;
 }
 
 .footer__link {

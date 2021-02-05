@@ -1,15 +1,14 @@
-.btn-link {
+.btn-primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 192px;
-  height: 38px;
-
 
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--white);
-
+  border: none;
+  border-radius: 0;
   background-color: var(--basic-red);
 }

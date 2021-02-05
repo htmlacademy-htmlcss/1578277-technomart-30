@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: "Cuprum";
-  src: local("Cuprum"),
-       local("Cuprum-Regular"),
+  src: local("Cuprum Italic"),
+       local("Cuprum-Italic"),
        url("../fonts/cuprumitalic.woff2") format("woff2"),
        url("../fonts/cuprumitalic.woff") format("woff");
   font-weight: 400;
@@ -21,22 +21,12 @@
 
 @font-face {
   font-family: "Cuprum";
-  src: local("Cuprum-Bold"),
-       local("Cuprum"),
+  src: local("Cuprum Bold"),
+       local("Cuprum-Bold"),
        url("../fonts/cuprumbold.woff2") format("woff2"),
        url("../fonts/cuprumbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Cuprum";
-  src: local("Cuprum-Bold"),
-       local("Cuprum"),
-       url("../fonts/cuprumbolditalic.woff2") format("woff2"),
-       url("../fonts/ccuprumbolditalic") format("woff");
-  font-weight: 700;
-  font-style: italic;
 }
 
 @font-face {
@@ -58,7 +48,3 @@
     font-weight: 700;
     font-style: normal;
 }
-
-
-
-
