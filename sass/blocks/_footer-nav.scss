@@ -3,7 +3,9 @@
 }
 
 .footer-nav__link {
-  color: var(--special-ligtpink);
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-backgraund);
   &--yellow {
     color: var(--special-yellowlight);
   }

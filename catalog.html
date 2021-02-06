@@ -8,6 +8,8 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page">
@@ -23,7 +25,7 @@
           <input type="search" placeholder="Поиск" id="search__field" name="q" class="search__field">
         </label>
       </form>
-      <ul class="menu__item checkout">
+      <ul class="menu__list checkout">
         <li class="checkout__item">
           <a href="#" class="checkout__link checkout__link--bookmark">Закладки: 0</a>
         </li>
@@ -45,14 +47,15 @@
         <a href="tel:+78125550555" class="header-contact__tel">+7 (812) 555-05-55</a>
         <p class="header-contact__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
-      <div class="header-info__user-menu user-menu">
-        <div class="user-menu__inner">
-          <a href="#" class="user-menu__link user-menu__link--login"></a>
-          <a href="#" class="user-menu__link user-menu__link--exit"></a>
+      <div class="header-info__user user">
+        <div class="user__inner">
+          <a href="#" class="user__link user__link--login"></a>
+          <p class="user__text"> Равшан Джамшутович </p>
+          <a href="#" class="user__link user__link--exit"></a>
         </div>
-        <div class="user-menu__box">
-          <a href="#" class="user-menu__link user-menu__link--order">Мои заказы</a>
-          <a href="#" class="user-menu__link user-menu__link--cabinet">Личный кабинет</a>
+        <div class="user__box">
+          <a href="#" class="user__link">Мои заказы</a>
+          <a href="#" class="user__link">Личный кабинет</a>
         </div>
       </div>
     </div>
@@ -83,73 +86,81 @@
     </nav>
   </header>
   <main class="page-content">
-    <h1 class="page-content__title">Перфораторы</h1>
-    <ul class="breadcrumbs__list">
-      <li class="breadcrumbs__item">
-        <a href="index.html" class="breadcrumbs__link breadcrumbs__link--home"></a>
-      </li>
-      <li class="breadcrumbs__item">
-        <a href="#" class="breadcrumbs__link">Каталог</a>
-      </li>
-      <li class="breadcrumbs__item">
-        <a href="#" class="breadcrumbs__link">Инструменты</a>
-      </li>
-      <li class="breadcrumbs__item">
-        Перфораторы
-      </li>
-    </ul>
+    <div class="page-content__header">
+      <h1 class="page-content__title">Перфораторы</h1>
+    </div>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link breadcrumbs__link--home"></a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Каталог</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Инструменты</a>
+        </li>
+        <li class="breadcrumbs__item">
+          Перфораторы
+        </li>
+      </ul>
+    </div>
     <div class="page-content__wrapper catalog">
       <section class="catalog__filter filter">
-        <h2 class="filter__title">Фильтр</h2>
+        <div class="filter__header">
+          <h2 class="filter__title">Фильтр</h2>
+        </div>
         <form class="filter__form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <div class="filter__range range">
-            <div class="range__price">
-              <label for="price">Цена:</label>
-              <input type="range" id="price" name="price" min="10000" max="30000" step="1000">
-            </div>
-            <div class="range__results">
-              <label for="">
-                <input type="text" placeholder="0" class="range__start">
-              </label>
-               -
-               <label for="">
-                 <input type="text" placeholder="30000" class="range__end">
-               </label>
+          <div class="filter__range">
+            <div class="filter__wrap">
+              <div class="filter__price">
+                <label for="price" class="filter__subtitle">Цена:</label>
+                <input type="range" id="price" name="price" min="10000" max="30000" step="1000">
+              </div>
+              <div class="filter__results">
+                <label for="">
+                  <input type="text" placeholder="0" class="filter__results filter__results--start">
+                </label>
+                -
+                <label for="">
+                  <input type="text" placeholder="30000" class="filter__results filter__results--end">
+                </label>
+              </div>
             </div>
           </div>
-          <fieldset class="filter__brands brands-filter">
-            <legend class="filter__text">Производители:</legend>
-            <ul class="brands-filter__list">
-              <li class="brands-filter__item">
+          <fieldset class="filter__fields filter__fields--brands">
+            <legend class="filter__subtitle">Производители:</legend>
+            <ul class="filter__list">
+              <li class="filter__item filter__item--brand">
                 <input type="checkbox" name="bosch" id="bosch" value="bosch" checked>
                 <label for="bosch">Bosch</label>
               </li>
-              <li class="brands-filter__item">
+              <li class="filter__item filter__item--brand">
                 <input type="checkbox" name="interskol" id="interskol" value="interskol">
                 <label for="interskol">Интерскол</label>
               </li>
-              <li class="brands-filter__item">
+              <li class="filter__item filter__item--brand">
                 <input type="checkbox" name="makita" id="makita" value="makita" checked>
                 <label for="makita">Makita</label>
               </li>
-              <li class="brands-filter__item">
+              <li class="filter__item filter__item--brand">
                 <input type="checkbox" name="dewalt" id="dewalt" value="dewalt">
                 <label for="dewalt">Dewalt</label>
               </li>
-              <li class="brands-filter__item">
+              <li class="filter__item filter__item--brand">
                 <input type="checkbox" name="hitachi" id="hitachi" value="hitachi">
                 <label for="hitachi">Hitachi</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter__power power-filter">
-            <legend class="power-filter__text">Питание:</legend>
-            <ul class="power-filter__list">
-              <li class="power-filter__item">
+          <fieldset class="filter__fields">
+            <legend class="filter__subtitle">Питание:</legend>
+            <ul class="filter__list">
+              <li class="filter__item filter__item--power">
                 <input type="radio" name="battery" id="battery" value="battery" checked>
                 <label for="battery">Аккумуляторные</label>
               </li>
-              <li class="power-filter__item">
+              <li class="filter__item filter__item--power">
                 <input type="radio" name="net" id="net" value="net">
                 <label for="net">Сетевые</label>
               </li>
@@ -161,7 +172,7 @@
       <section class="catalog__cards cards">
         <h2 class="visually-hidden">Карточки товаров</h2>
         <div class="cards__sort sort">
-          <span class="sort__note">Сортировка</span>
+          <span class="sort__note">Сортировка:</span>
           <ul class="sort__list">
             <li class="sort__item">
               <a href="#" class="sort__link">По цене</a>
@@ -184,14 +195,14 @@
           <img src="img/card/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"
             class="card-good__img">
           <h3 class="card-good__title">Перфоратор BOSCH BFG 6000</h3>
-          <span class="card-good_prace card-good__prace--old">30 500 Р.</span>
+          <span class="card-good__prace card-good__prace--old">30 500 Р.</span>
           <span class="card-good__prace card-good__prace--new">25 500 Р.</span>
         </article>
         <article class="cards__item card-good">
           <img src="img/card/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"
             class="card-good__img">
           <h3 class="card-good__title">Перфоратор BOSCH BFG 6000</h3>
-          <span class="card-good_prace card-good__prace--old">30 500 Р.</span>
+          <span class="card-good__prace card-good__prace--old">30 500 Р.</span>
           <span class="card-good__prace card-good__prace--new">25 500 Р.</span>
         </article>
         <article class="cards__item card-good">
@@ -207,7 +218,7 @@
           <img src="img/card/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"
             class="card-good__img">
           <h3 class="card-good__title">Перфоратор BOSCH BFG 3000</h3>
-          <span class="card-good_prace card-good__prace--old">22 500 Р.</span>
+          <span class="card-good__prace card-good__prace--old">22 500 Р.</span>
           <span class="card-good__prace card-good__prace--new">15 500 Р. </span>
         </article>
         <article class="cards__item card-good">
@@ -263,9 +274,9 @@
         </ul>
       </div>
     </div>
-    <section class="page-content__text aside">
-      <h2 class="aside__title">Пара слов о перфораторах</h2>
-      <p class="aside__text">
+    <section class="page-content__article">
+      <h2 class="page-content__title">Пара слов о перфораторах</h2>
+      <p class="page-content__text">
         Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления
         отверстий в кирпиче, бетоне и камне.
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
@@ -278,11 +289,11 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper footer">
       <a href="#" class="footer__link logo">
-        <img src="img/logo.png" width="220" height="47" alt="Логотип компании Техномарт" class="logo__img">
+        <img src="img/logo.svg" width="220" height="47" alt="Логотип компании Техномарт" class="logo__img">
       </a>
       <ul class="footer__nav footer-nav">
         <li class="footer-nav__item">
-          <a href="#" class=" footer-nav__link">Компания</a>
+          <a href="#" class="footer-nav__link">Компания</a>
         </li>
         <li class="footer-nav__item">
           <a href="#" class="footer-nav__link">Новости</a>
@@ -297,65 +308,78 @@
           <a href="#" class="footer-nav__link">Контакты</a>
         </li>
       </ul>
-      <div class="footer__contact footer-contact">
-        <p class="footer-contact__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:+78125550555" class="footer-contact__tel">+7 (812) 555-05-55</a>
+      <div class="footer__wrap">
+        <address class="footer__contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        <a href="tel:+78125550555" class="footer__contact">+7 (812) 555-05-55</a>
       </div>
-      <ul class="footer__nav footer-nav footer-nav--yellow">
+      <ul class="footer__nav footer-nav">
         <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Материалы</a>
+          <a href="#" class="footer-nav__link footer-nav__link--yellow">Материалы</a>
         </li>
         <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Техника</a>
+          <a href="#" class="footer-nav__link footer-nav__link footer-nav__link--yellow">Техника</a>
         </li>
         <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Инструмент</a>
+          <a href="#" class="footer-nav__link footer-nav__link footer-nav__link--yellow">Инструмент</a>
         </li>
         <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Спецпредложения</a>
+          <a href="#" class="footer-nav__link footer-nav__link footer-nav__link--yellow">Спецпредложения</a>
         </li>
       </ul>
     </div>
     <div class="page-footer__wrapper footer footer--submenu">
-      <span class="copyright">
+      <p class="footer__copyright">
         &copy; 2010-2019 Компания "Техномарт"
         Все права защищены
-      </span>
-      <ul class="socials">
-        <li class="socials__item">
+      </p>
+      <ul class="footer__list">
+        <li class="footer__item">
           <a href="#" title="Вконтакте" target="_blank" rel="noopener noreferrer"
-            class="socials__link socials__link--vkontakte"></a>
+            class="footer__link footer__link--socials">
+            <svg width="26" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.54 11.728c.92-.29 2.1 1.913 3.354 2.755.942.639 1.663.501 1.663.501l3.345-.047s1.747-.105.921-1.457c-.068-.112-.484-1.002-2.489-2.833-2.096-1.915-1.812-1.605.712-4.916 1.538-2.019 2.153-3.251 1.96-3.776-.185-.506-1.314-.374-1.314-.374l-3.768.025c-.367 0-.678.111-.82.483-.003.003-.598 1.562-1.391 2.886-1.677 2.802-2.346 2.952-2.623 2.776-.637-.406-.476-1.628-.476-2.497 0-2.716.416-3.849-.815-4.141-.411-.098-.711-.161-1.76-.17-1.34-.02-2.479 0-3.124.308-.428.209-.757.667-.557.693.25.033.811.15 1.112.55.386.517.374 1.677.374 1.677s.22 3.198-.52 3.594c-.508.272-1.203-.283-2.699-2.827-.763-1.301-1.34-2.74-1.34-2.74s-.112-.267-.314-.413c-.24-.173-.578-.229-.578-.229L.817 1.58s-.538.015-.735.245c-.175.205-.015.627-.015.627s2.802 6.45 5.974 9.7c2.908 2.983 6.213 2.785 6.213 2.785h1.497s.452-.05.683-.292c.216-.225.206-.648.206-.648s-.03-1.977.9-2.268z"
+                fill="#fff" /></svg>
+          </a>
         </li>
-        <li class="socials__item">
+        <li class="footer__item">
           <a href="#" title="Facebook" target="_blank" rel="noopener noreferrer"
-            class="socials__link socials__link--facebook"></a>
+            class="footer__link footer__link--socials">
+            <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff" /></svg>
+          </a>
         </li>
-        <li class="socials__item">
+        <li class="footer__item">
           <a href="#" title="Instagram" target="_blank" rel="noopener noreferrer"
-            class="socials__link socials__link--instagram"></a>
+            class="footer__link footer__link--socials">
+            <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3 0h15c1.65 0 3 1.35 3 3v15c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm11 10.5C14 8.57 12.43 7 10.5 7S7 8.57 7 10.5 8.57 14 10.5 14s3.5-1.57 3.5-3.5zM3 18V9h1.181c-.118.491-.18.995-.181 1.5a6.5 6.5 0 1013 0 6.451 6.451 0 00-.181-1.5H18v9H3zM14 7h4V3h-4v4z"
+                fill="#fff" /></svg>
+          </a>
         </li>
       </ul>
-      <p class="feedback">
+      <p class="footer__text">
         Обратная связь:
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a href="mailto:mail@htmlacademy.ru" class="footer__link">mail@htmlacademy.ru</a>
       </p>
-      <p>
+      <p class="footer__text">
         Разработано -
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" rel="noopener noreferrer"
-          class="page-footer__link">
-          https://htmlacademy.ru
+          class="footer__link">
+          htmlacademy.ru
         </a>
       </p>
     </div>
   </footer>
-  <section class="modal-window modal-window--cart">
-    <h2 class="visually-hidden">Информация о добавлении томара в корзину</h2>
-    <p class="modal-window__text">Товар добавлен в корзину</p>
-    <div class="modal-window__wrap">
-      <a href="#" class="modal-window__link modal-window__link--order">Оформить заказ</a>
-      <a href="#" class="modal-window__link modal-window__link--continue">Продолжить покупки</a>
+  <section class="modal-cart">
+    <h2 class="visually-hidden">Информация о добавлении товара в корзину</h2>
+    <p class="modal-cart__text">Товар добавлен в корзину!</p>
+    <div class="modal-cart__wrap">
+      <a href="#" class="modal-cart__link modal-cart__link--order">Оформить заказ</a>
+      <a href="#" class="modal-cart__link modal-cart__link--continue">Продолжить покупки</a>
     </div>
-    <button type="button" class="modal-window__button">Закрыть</button>
+    <button type="button" class="modal-cart__button">Закрыть</button>
   </section>
 </body>
 
