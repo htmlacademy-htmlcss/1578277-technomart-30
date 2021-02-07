@@ -1,11 +1,14 @@
 .footer {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 24px;
   color: var(--white);
 
   background-color: var(--basic-darkblue);
 
   &--submenu {
+    font-size: 16px;
+    line-height: 18px;
+
     background-color: var(--basic-dark);
   }
 }
@@ -21,4 +24,30 @@
 
 .footer__link {
   color: var(--special-yellowlight);
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--dark);
+}
+
+.footer__link--socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+.footer__contact {
+  font-style: normal;
+  color: var(--basic-backgraund);
 }

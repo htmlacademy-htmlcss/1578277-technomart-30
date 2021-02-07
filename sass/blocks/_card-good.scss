@@ -38,3 +38,29 @@
   background-size: 50% 50%;
   background-repeat: no-repeat;
 }
+
+.card-good__button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  border: none;
+
+  &--buy {
+    padding: 11px 34px 9px 33px;
+
+    color: var(--white);
+    background-color: var(--basic-green);
+    box-shadow: inset 0px -3px 0px var(--speacial-green);
+    border-radius: 2px;
+  }
+
+  &--bookmark {
+    padding: 11px 34px 9px 33px;
+
+    color: var(--basic-darkblue);
+    background-color: transparent;
+    border: 3px solid var(--basic-green);
+    border-radius: 2px;
+  }
+}
