@@ -1,4 +1,8 @@
 .card {
+  padding-right: 143px;
+  padding-bottom: 21px;
+  padding-left: 22px;
+
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -8,40 +12,60 @@
     grid-area: materials;
 
     background-color: var(--special-yellow);
+    background-image: url("../../img/icon/materials.svg");
+    background-repeat: no-repeat;
+    background-position: 83% 56%;
   }
 
   &--tools {
     grid-area: tools;
 
     background-color: var(--special-blue);
+    background-image: url("../../img/icon/tools.svg");
+    background-repeat: no-repeat;
+    background-position: 88% 56%;
   }
 
   &--machinery {
     grid-area: machinery;
 
     background-color: var(--special-lilac);
+    background-image: url("../../img/icon/machinery.svg");
+    background-repeat: no-repeat;
+    background-position: 83% 56%;
   }
 
   &--sale {
     grid-area: sale;
 
     background-color: var(--special-greenlight);
+    background-image: url("../../img/icon/sale.svg");
+    background-repeat: no-repeat;
+    background-position: 83% 56%;
   }
 
   &--delivery {
     grid-area: delivery;
     background-color: var(--special-yellow);
+    background-image: url("../../img/icon/delivery.svg");
+    background-repeat: no-repeat;
+    background-position: 83% 56%;
   }
 }
 
 .card__title {
+  padding-top: 20px;
+  padding-bottom : 14px;
   margin: 0;
 }
 
 .card__link {
   display: flex;
-  align-items: center;
+  align-self: center;
   justify-content: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   font-size: 14px;
   font-weight: normal;

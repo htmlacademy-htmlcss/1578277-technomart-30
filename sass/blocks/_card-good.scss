@@ -1,11 +1,15 @@
 .card-good {
   display: grid;
   grid-template-areas:
-      "img img img"
-      "title title title"
-      ". old ."
-      "new new new";
-  grid-template-rows: 172px 1fr auto auto;
+    "img img img"
+    "title title title"
+    ". old ."
+    "new new new";
+  grid-template-rows:
+    172px
+    1fr
+    auto
+    auto;
   width: 220px;
 
   font-style: normal;
@@ -53,8 +57,8 @@
   color: var(--white);
 
   background-color: var(--basic-red);
-  //background: linear-gradient(-45deg, transparent 15px, var(--basic-red) 0) bottom left,
-              //linear-gradient(-135deg, transparent 15px, var(--basic-red) 0) top left;
+  /*background: linear-gradient(-45deg, transparent 15px, var(--basic-red) 0) bottom left,
+              linear-gradient(-135deg, transparent 15px, var(--basic-red) 0) top left;*/
   background-size: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -63,7 +67,6 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-
   border: none;
 
   &--buy {

@@ -5,6 +5,7 @@
 .slider__description {
   grid-area: 1/1/2/4;
   z-index: 1;
+
   padding-top: 23px;
   padding-left: 24px;
   margin: 0;
@@ -30,8 +31,6 @@
 }
 
 .slider__button {
-
-
   background-color: Transparent;
   background-image: url("../../img/icon/slider-button.png");
   background-repeat: no-repeat;

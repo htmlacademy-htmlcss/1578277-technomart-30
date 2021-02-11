@@ -1,7 +1,6 @@
-.contacts {
-  margin-bottom: 10px;
-}
 .contacts__title {
+  padding-top: 22px;
+  padding-bottom: 24px;
   margin: 0;
 
   font-size: 30px;
@@ -11,6 +10,7 @@
 }
 
 .contacts__text {
+  padding-bottom: 32px;
   margin: 0;
   font-size: 13px;
   line-height: 24px;
@@ -18,9 +18,9 @@
 }
 
 .contacts__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  padding: 11px 61px 9px 61px;
+  margin-top: 25px;
 
   font-size: 14px;
   line-height: 18px;
@@ -30,8 +30,8 @@
   background-color: var(--basic-red);
 }
 
-.contacts__link {
-  display: inline-block;
+.contacts__map-link {
+  display: block;
   width: 300px;
   height: 158px;
 }

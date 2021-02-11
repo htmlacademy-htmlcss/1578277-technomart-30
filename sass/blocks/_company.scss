@@ -1,4 +1,6 @@
 .company__title {
+  padding-top: 22px;
+  padding-bottom: 24px;
   margin: 0;
 
   font-size: 30px;
@@ -8,17 +10,32 @@
 }
 
 .company__text {
+  padding-right: 30px;
   margin: 0;
 
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
+
+  &--promo {
+    padding-bottom: 20px;
+  }
+}
+
+.company__list {
+  list-style: none;
+  margin: 0;
 }
 
 .company__item {
   padding-top: 0;
   padding-bottom: 12px;
 
+  &:last-child {
+    padding-bottom: 25px;
+  }
+
+  /* это маркеры списка, которые по быстрому не получились, я подумаю над ними позже
   &::before {
     content: "";
     position: relative;
@@ -30,13 +47,14 @@
     padding-left: 12px;
 
     background: var(--basic-red);
-  }
+  }*/
 }
 
 .company__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  padding: 11px 40px 9px 40px;
+  margin-right: 270px;
+  margin-bottom: 22px;
 
   font-size: 14px;
   line-height: 18px;
@@ -44,13 +62,4 @@
   color: var(--white);
 
   background-color: var(--basic-red);
-}
-
-.company__list {
-  list-style: none;
-  margin: 0;
-}
-
-.company__item {
-  padding: 0;
 }

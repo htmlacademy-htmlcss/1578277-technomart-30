@@ -5,7 +5,6 @@
 .service__wrapper {
   padding-top: 64px;
   padding-left: 9px;
-  padding-bottom: 99px;
 }
 
 .service__title {
@@ -20,7 +19,7 @@
 
 .service__text {
   padding-right: 319px;
-  margin: 0;
+  margin: 0 0 99px 0;
 
   font-size: 13px;
   line-height: 24px;
@@ -29,10 +28,11 @@
   &--slogan {
     padding-right: 537px;
     padding-bottom: 70px;
+    margin: 0;
   }
 }
 
-.service__box{
+.service__box {
   display: grid;
   grid-template-areas: "menu desc";
   grid-template-columns: 240px auto;
@@ -43,11 +43,36 @@
 
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 99px 0;
 }
 
 .service__wrap {
   grid-area: desc;
+  min-width: 619px;
+  margin-left: 80px;
 
-  padding-left: 80px;
+
+}
+
+.service__desc {
+  min-height: 283px;
+
+  background-position: right 40%;
+  background-repeat: no-repeat;
+
+
+  &--delivery {
+    background-image: url("../../img/service/delivery.png ");
+    background-size: 468px 261px;
+  }
+
+  &--guarantee {
+    background-image: url("../../img/service/guarantee.png");
+    background-size: 389px 283px;
+  }
+
+  &--credit {
+    background-image: url("../../img/service/credit.png");
+    background-size: 389px 283px;
+  }
 }

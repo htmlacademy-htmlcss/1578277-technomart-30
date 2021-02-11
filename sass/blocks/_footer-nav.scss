@@ -1,7 +1,3 @@
-.footer-nav {
-  margin: 0;
-}
-
 .footer-nav__link {
   font-size: 18px;
   line-height: 24px;
@@ -11,8 +7,10 @@
   }
 }
 
-.footer__nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.footer-nav__item {
+  padding-right: 58px;
+
+  &:last-child {
+    padding-right: 0;
+  }
 }
