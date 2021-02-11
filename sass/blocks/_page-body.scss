@@ -1,0 +1,18 @@
+.page-body {
+  display: grid;
+  grid-template-rows:
+    auto
+    1fr
+    auto;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  height: 100vh;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size:  18px;
+  line-height: 24px;
+  font-family: "Cuprum", Verdana, sans-serif;
+}

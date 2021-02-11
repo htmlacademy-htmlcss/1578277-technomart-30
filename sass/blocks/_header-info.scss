@@ -1,8 +1,45 @@
 .header-info__text {
+  padding: 37px 93px 44px 30px;
   margin: 0;
 
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-red);
+}
+
+.header-info .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-info__contact {
+  //height: ;
+  padding-top: 36px;
+  padding-right: 69px;
+  padding-bottom: 40px;
+}
+
+.header-info__tel {
+  display: inline-block;
+  min-width: 270px;
+  padding: 7px 5px 8px 74px;
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+
+  border: 3px solid var(--white);
+}
+
+.header-info__address {
+  margin: 3px 10px 0 10px;
+
+  font-size: 14px;
+  color: var(--basic-darkblue);
+}
+
+.header-info__user-menu {
+  margin: 36px 0 67px 0;
 }

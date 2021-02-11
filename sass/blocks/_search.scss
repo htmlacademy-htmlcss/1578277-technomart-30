@@ -1,8 +1,17 @@
+.search {
+  width: 271px;
+  padding-top: 11px;
+}
+
 .search__btn {
   visibility: hidden;
 }
 
 .search__field {
+  width: 236px;
+  padding: 0;
+
+
   background-color: inherit;
   border: none;
 

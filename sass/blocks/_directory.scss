@@ -1,0 +1,10 @@
+.directory__container {
+  display: grid;
+  grid-template-areas:
+    "materials tools machinery"
+    "slider slider sale"
+    "slider slider delivery";
+  gap: 20px;
+  grid-auto-columns: 1fr;
+  margin-bottom: 59px;
+}

@@ -1,9 +1,21 @@
+.user-menu {
+  display: flex;
+}
+
 .user-menu__link {
-  display: inline-block;
-  padding: 12px 27px 12px 45px;
+
 
   font-size: 21px;
   line-height: 21px;
 
   background-color: var(--white);
+
+  &--login {
+    padding: 12px 27px 12px 45px;
+  }
+
+  &--registration {
+    padding: 12px 24px 12px 24px;
+    margin-left: 10px;
+  }
 }

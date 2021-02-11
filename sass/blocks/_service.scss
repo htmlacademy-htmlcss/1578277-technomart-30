@@ -2,7 +2,14 @@
   background-color: var(--basic-backgraund);
 }
 
+.service__wrapper {
+  padding-top: 64px;
+  padding-left: 9px;
+  padding-bottom: 99px;
+}
+
 .service__title {
+  padding-bottom: 25px;
   margin: 0;
 
   font-size: 30px;
@@ -12,15 +19,35 @@
 }
 
 .service__text {
+  padding-right: 319px;
   margin: 0;
 
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
+
+  &--slogan {
+    padding-right: 537px;
+    padding-bottom: 70px;
+  }
+}
+
+.service__box{
+  display: grid;
+  grid-template-areas: "menu desc";
+  grid-template-columns: 240px auto;
 }
 
 .service__list {
+  grid-area: menu;
+
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.service__wrap {
+  grid-area: desc;
+
+  padding-left: 80px;
 }

@@ -1,4 +1,13 @@
 .card-good {
+  display: grid;
+  grid-template-areas:
+      "img img img"
+      "title title title"
+      ". old ."
+      "new new new";
+  grid-template-rows: 172px 1fr auto auto;
+  width: 220px;
+
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -10,7 +19,15 @@
 }
 
 .card-good__title {
+  grid-area: title;
+  padding-bottom: 6px;
   margin: 0;
+}
+
+.card-good__img {
+  grid-area: img;
+  align-self: center;
+  justify-self: center;
 }
 
 .card-good__prace {
@@ -20,21 +37,24 @@
 }
 
 .card-good__prace--old {
+  grid-area: old;
+  padding-bottom: 13px;
+
   text-decoration-line: line-through;
   color: var(--basic-greylight);
 }
 
 .card-good__prace--new {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  padding-left: 32px;
+  grid-area: new;
+
+  padding: 10px 40px 10px 32px;
+  margin: 0 34px 21px 45px;
 
   color: var(--white);
 
   background-color: var(--basic-red);
-  background: linear-gradient(-45deg, transparent 15px, var(--basic-red) 0) bottom left,
-              linear-gradient(-135deg, transparent 15px, var(--basic-red) 0) top left;
+  //background: linear-gradient(-45deg, transparent 15px, var(--basic-red) 0) bottom left,
+              //linear-gradient(-135deg, transparent 15px, var(--basic-red) 0) top left;
   background-size: 50% 50%;
   background-repeat: no-repeat;
 }

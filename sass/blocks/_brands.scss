@@ -1,24 +1,41 @@
 .brands__header {
-  display: block;
+  display: inline-flex;
 
   background-color: var(--basic-lightbeige);
 }
 
 .brands__title {
+  padding: 29px 334px 30px 28px;
   margin: 0;
 
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-darkblue);
 }
 
- .brands__list {
+.brands__btn {
+  padding: 11px 38px 9px 39px;
+  margin-right: 14px;
+  align-self: center;
+}
+
+.brands__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  margin: 20px 0 118px 0;
+
   list-style: none;
   padding: 0;
-  margin: 0;
  }
 
  .brands__item {
    height: 145px;
  }
+
+
+
+

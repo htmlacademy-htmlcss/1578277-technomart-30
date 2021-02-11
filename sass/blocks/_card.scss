@@ -5,22 +5,31 @@
   color: var(--white);
 
   &--materials {
+    grid-area: materials;
+
     background-color: var(--special-yellow);
   }
 
   &--tools {
+    grid-area: tools;
+
     background-color: var(--special-blue);
   }
 
   &--machinery {
+    grid-area: machinery;
+
     background-color: var(--special-lilac);
   }
 
   &--sale {
+    grid-area: sale;
+
     background-color: var(--special-greenlight);
   }
 
   &--delivery {
+    grid-area: delivery;
     background-color: var(--special-yellow);
   }
 }
