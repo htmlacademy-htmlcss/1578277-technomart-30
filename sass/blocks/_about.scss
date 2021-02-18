@@ -1,14 +1,5 @@
 .about {
-  display: grid;
-  grid-template-areas: "company contacts";
-}
-
-.about__company {
-  grid-area: company;
-
-  margin: 0 130px 48px 0;
-}
-
-.about__contacts {
-  grid-area: contacts;
+  display: flex;
+  padding-top: 22px;
+  padding-bottom: 70px;
 }

@@ -21,6 +21,9 @@
 
   border: 1px solid var(--border-card);
 }
+.card-good__wrapper--hidden {
+  display: none;
+}
 
 .card-good__title {
   grid-area: title;

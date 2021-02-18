@@ -1,11 +1,7 @@
-.page-content {
-  grid-area: content;
-}
-
 .page-content__header {
   margin: 0;
 
-  background-color: var(--basic-ligtpink);
+  background-color: var(--basic-lightpink);
 }
 .page-content__title {
   margin: 0;
@@ -20,7 +16,7 @@
 }
 
 .page-content__article {
-  background-color: var(--basic-backgraund);
+  background-color: var(--basic-background);
 }
 
 .page-content__text {

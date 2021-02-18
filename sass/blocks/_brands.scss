@@ -1,12 +1,19 @@
+.brands {
+  padding-bottom: 118px;
+}
+
 .brands__header {
   display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 25px 19px 26px 28px;
+  margin-bottom: 20px;
 
   background-color: var(--basic-lightbeige);
 }
 
 .brands__title {
-  padding: 29px 334px 30px 28px;
-  margin: 0;
+  margin: 0 334px 0 0;
 
   font-weight: normal;
   font-size: 30px;
@@ -17,21 +24,17 @@
 
 .brands__btn {
   padding: 11px 38px 9px 39px;
-  margin-right: 14px;
-  align-self: center;
 }
 
 .brands__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-
   padding: 0;
-  margin: 20px 0 118px 0;
-
+  margin: 0;
   list-style: none;
- }
+}
 
- .brands__item {
-   height: 145px;
- }
+ .brands__link {
+   display: flex;
+}

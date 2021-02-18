@@ -1,3 +1,8 @@
+.directory {
+  padding-top: 59px;
+  padding-bottom: 59px;
+}
+
 .directory__container {
   display: grid;
   grid-template-areas:
@@ -6,5 +11,4 @@
     "slider slider delivery";
   gap: 20px;
   grid-auto-columns: 1fr;
-  margin-bottom: 59px;
 }

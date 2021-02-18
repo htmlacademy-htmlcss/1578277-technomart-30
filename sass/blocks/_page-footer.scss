@@ -1,4 +1,22 @@
 .page-footer {
-  grid-area: footer;
-  min-height: 300px;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+
+  background-color: var(--basic-darkblue);
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-footer__wrap {
+  margin-right: 95px;
+  margin-bottom: 54px;
+}
+.page-footer__address,
+.page-footer__tel {
+  font-style: normal;
+  color: var(--basic-background);
 }

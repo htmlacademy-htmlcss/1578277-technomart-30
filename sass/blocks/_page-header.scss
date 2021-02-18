@@ -1,6 +1,11 @@
 .page-header {
-  grid-area: header;
-  min-height: 320px;
+  padding-bottom: 60px;
 
-  background-color: var(--basic-ligtpink);
+  background-color: var(--basic-lightpink);
+}
+
+.page-header__submenu {
+  max-width: 940px;
+  padding-left: 0;
+  padding-right: 0;
 }

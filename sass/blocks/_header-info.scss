@@ -1,6 +1,13 @@
+.header-info__container {
+  display: flex;
+  align-items: start;
+
+  padding-top: 32px;
+  padding-bottom: 44px;
+}
+
 .header-info__text {
-  padding: 37px 93px 44px 30px;
-  margin: 0;
+  margin: 0 93px 0 30px;
 
   font-style: italic;
   font-size: 16px;
@@ -8,21 +15,17 @@
   color: var(--basic-red);
 }
 
-.header-info .container {
-  display: flex;
-  align-items: center;
-}
-
 .header-info__contact {
-  padding-top: 36px;
-  padding-right: 69px;
-  padding-bottom: 40px;
+  margin-right: 69px;
+  text-align: center;
 }
 
 .header-info__tel {
   display: inline-block;
+  vertical-align: baseline;
+
   min-width: 270px;
-  padding: 7px 5px 8px 74px;
+  padding: 7px 5px 8px 5px;
 
   font-weight: bold;
   font-size: 21px;
@@ -33,12 +36,8 @@
 }
 
 .header-info__address {
-  margin: 3px 10px 0 10px;
+  margin: 0;
 
   font-size: 14px;
   color: var(--basic-darkblue);
-}
-
-.header-info__user-menu {
-  margin: 36px 0 67px 0;
 }

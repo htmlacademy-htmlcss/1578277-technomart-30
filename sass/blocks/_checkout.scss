@@ -1,3 +1,13 @@
+.checkout {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
 .checkout__link {
   color: var(--white);
 
@@ -11,26 +21,15 @@
   }
 }
 
-.checkout {
-  display: inline-flex;
-  align-items: center;
-
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
-}
-
 .checkout__item {
 
-
   &:first-child {
-    padding-right: 50px;
-    padding-left: 20px;
+    margin-right: 50px;
+    margin-left: 20px;
   }
 
   &:nth-child(3) {
-    padding-right: 0;
-    padding-left: 26px;
+    margin-right: 0;
+    margin-left: 26px;
   }
 }

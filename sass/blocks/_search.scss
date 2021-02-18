@@ -1,6 +1,5 @@
 .search {
   width: 271px;
-  padding-top: 11px;
 }
 
 .search__btn {
@@ -8,12 +7,17 @@
 }
 
 .search__field {
-  width: 236px;
+  width: 271px;
+  height: 100%;
   padding: 0;
 
 
   background-color: inherit;
   border: none;
+  outline: none;
+  &:focus {
+    background-color: white;
+  }
 
   &::-webkit-input-placeholder {
     font-size: 18px;

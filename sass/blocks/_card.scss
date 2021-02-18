@@ -1,19 +1,15 @@
 .card {
+  padding-top: 20px;
   padding-right: 143px;
   padding-bottom: 21px;
   padding-left: 22px;
-
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
-  color: var(--white);
+  background-repeat: no-repeat;
 
   &--materials {
     grid-area: materials;
 
     background-color: var(--special-yellow);
-    background-image: url("../../img/icon/materials.svg");
-    background-repeat: no-repeat;
+    background-image: url("../img/icon/materials.svg");
     background-position: 83% 56%;
   }
 
@@ -21,8 +17,7 @@
     grid-area: tools;
 
     background-color: var(--special-blue);
-    background-image: url("../../img/icon/tools.svg");
-    background-repeat: no-repeat;
+    background-image: url("../img/icon/tools.svg");
     background-position: 88% 56%;
   }
 
@@ -30,8 +25,7 @@
     grid-area: machinery;
 
     background-color: var(--special-lilac);
-    background-image: url("../../img/icon/machinery.svg");
-    background-repeat: no-repeat;
+    background-image: url("../img/icon/machinery.svg");
     background-position: 83% 56%;
   }
 
@@ -39,24 +33,25 @@
     grid-area: sale;
 
     background-color: var(--special-greenlight);
-    background-image: url("../../img/icon/sale.svg");
-    background-repeat: no-repeat;
+    background-image: url("../img/icon/sale.svg");
     background-position: 83% 56%;
   }
 
   &--delivery {
     grid-area: delivery;
     background-color: var(--special-yellow);
-    background-image: url("../../img/icon/delivery.svg");
-    background-repeat: no-repeat;
+    background-image: url("../img/icon/delivery.svg");
     background-position: 83% 56%;
   }
 }
 
 .card__title {
-  padding-top: 20px;
-  padding-bottom : 14px;
-  margin: 0;
+  margin: 0 0 14px;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
 }
 
 .card__link {
