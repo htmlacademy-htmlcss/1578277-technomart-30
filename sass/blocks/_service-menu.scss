@@ -1,20 +1,23 @@
 .service-menu {
-  padding-left: 0;
-
+  min-width: 240px;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  color: var(--white);
 
   background-color: var(--basic-darkblue);
 }
 
 .service-menu__item {
-   display: flex;
-   align-items: center;
-   height: 61px;
-   padding-left: 22px;
-   &:hover {
+  flex-wrap: wrap;
+
+}
+
+.service-menu__link {
+  display: flex;
+  padding: 13px 22px 17px 22px;
+
+  color: var(--white);
+&:focus {
     color: var(--basic-darkblue);
     background-color: var(--white);
   }

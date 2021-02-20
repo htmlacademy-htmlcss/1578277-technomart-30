@@ -1,8 +1,16 @@
 .logo {
   display: flex;
   align-items: center;
-  justify-content: center;
+
+  padding: 12px 56px 12px;
 
   background-color: var(--basic-red);
   box-shadow: 0px 5px 0px 0px var(--error);
+
+  &--footer {
+    max-height: 63px;
+    padding: 20px 41px 20px 41px;
+    margin-right: 174px;
+    margin-bottom: 27px;
+  }
 }

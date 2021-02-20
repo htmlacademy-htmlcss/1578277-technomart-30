@@ -1,10 +1,23 @@
+.search {
+  width: 271px;
+}
+
 .search__btn {
   visibility: hidden;
 }
 
 .search__field {
+  width: 271px;
+  height: 100%;
+  padding: 0;
+
+
   background-color: inherit;
   border: none;
+  outline: none;
+  &:focus {
+    background-color: white;
+  }
 
   &::-webkit-input-placeholder {
     font-size: 18px;

@@ -1,9 +1,35 @@
-.checkout__link {
-  color: var(--white);
-}
-
 .checkout {
-  list-style: none;
+  display: inline-flex;
+  align-items: center;
+
   padding: 0;
   margin: 0;
+
+  list-style: none;
+}
+
+.checkout__link {
+  color: var(--white);
+
+  &--bookmark {
+    padding-left: 9px;
+  }
+
+  &--order {
+    padding: 15px 16px 13px 19px;
+    background-color: var(--basic-green);
+  }
+}
+
+.checkout__item {
+
+  &:first-child {
+    margin-right: 50px;
+    margin-left: 20px;
+  }
+
+  &:nth-child(3) {
+    margin-right: 0;
+    margin-left: 26px;
+  }
 }

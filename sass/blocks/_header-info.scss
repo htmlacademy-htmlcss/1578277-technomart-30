@@ -1,8 +1,43 @@
+.header-info__container {
+  display: flex;
+  align-items: start;
+
+  padding-top: 32px;
+  padding-bottom: 44px;
+}
+
 .header-info__text {
-  margin: 0;
+  margin: 0 93px 0 30px;
 
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-red);
+}
+
+.header-info__contact {
+  margin-right: 69px;
+  text-align: center;
+}
+
+.header-info__tel {
+  display: inline-block;
+  vertical-align: baseline;
+
+  min-width: 270px;
+  padding: 7px 5px 8px 5px;
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+
+  border: 3px solid var(--white);
+}
+
+.header-info__address {
+  margin: 0;
+
+  font-size: 14px;
+  color: var(--basic-darkblue);
 }
