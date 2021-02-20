@@ -15,6 +15,10 @@
     padding-left: 9px;
   }
 
+  &--cart {
+    padding-left: 9px;
+  }
+
   &--order {
     padding: 15px 16px 13px 19px;
     background-color: var(--basic-green);
@@ -22,6 +26,8 @@
 }
 
 .checkout__item {
+  display: inline-flex;
+  align-items: center;
 
   &:first-child {
     margin-right: 50px;

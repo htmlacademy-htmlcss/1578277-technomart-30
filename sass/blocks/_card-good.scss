@@ -21,6 +21,13 @@
 
   border: 1px solid var(--border-card);
 }
+
+.card-good__wrapper {
+  grid-area: img;
+
+  padding-top: 38px;
+}
+
 .card-good__wrapper--hidden {
   display: none;
 }
@@ -73,7 +80,9 @@
   border: none;
 
   &--buy {
-    padding: 11px 34px 9px 33px;
+    padding: 10px 41px 10px 52px;
+    margin-bottom: 10px;
+    //text-align: center;
 
     color: var(--white);
     background-color: var(--basic-green);
@@ -82,7 +91,7 @@
   }
 
   &--bookmark {
-    padding: 11px 34px 9px 33px;
+    padding: 8px 31px 6px 30px;
 
     color: var(--basic-darkblue);
     background-color: transparent;

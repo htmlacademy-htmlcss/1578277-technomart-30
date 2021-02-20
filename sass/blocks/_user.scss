@@ -1,4 +1,9 @@
+.user {
+  text-align: center;
+}
+
 .user__inner {
+  margin-bottom: 7px;
   font-size: 21px;
   line-height: 21px;
 
@@ -14,4 +19,24 @@
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-darkblue);
+}
+
+.user__link--order {
+    padding-right: 32px;
+
+  &::after {
+    content: " ";
+    position: relative;
+    left: 18px;
+
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+
+    //padding-left: 13px;
+
+    background-color: #32425C;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+  }
 }
