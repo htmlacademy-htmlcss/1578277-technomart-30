@@ -5,9 +5,15 @@
   margin: 0;
 }
 
+.pagination__item {
+  padding-right: 10px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
 .pagination__link {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 15px;
   margin-right: 10px;
 
   font-size: 13px;

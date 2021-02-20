@@ -1,0 +1,12 @@
+.cards__sort {
+  margin-bottom: 28px;
+}
+
+.cards__wrapper {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  margin-bottom: 48px;
+}
