@@ -72,28 +72,30 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
-
-
   text-align: center;
   border: none;
   border-radius: 5px;
   background: var(--basic-beige);
 
+  -moz-appearance:textfield;
+
   &--min {
-    padding-left: 42px;
-    padding-right: 29px;
     margin-right: 10px;
   }
 
   &--max {
-    padding-left: 24px;
-    padding-right: 10px;
     margin-left: 10px;
   }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 }
 
 .range__price-controls {
-  display: flex;
+  display: inline-flex;
+  align-items: center;
 
   font-size: 17px;
   line-height: 18px;

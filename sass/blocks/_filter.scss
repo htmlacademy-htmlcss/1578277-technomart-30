@@ -1,5 +1,5 @@
 .filter {
-  padding-right: 21px;
+  width: 220px;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Tahoma, sans-serif;
@@ -36,19 +36,19 @@
 }
 
 .filter__item {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   font-size: 15px;
   line-height: 19px;
 
   &:last-child {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   &--power {
-    padding-bottom: 22px;
+    margin-bottom: 22px;
     &:last-child {
-      padding-bottom: 0;
+      margin-bottom: 0;
     }
   }
 }
