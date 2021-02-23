@@ -1,13 +1,25 @@
 .search {
+  display: inline-flex;
   width: 271px;
 }
 
 .search__btn {
-  visibility: hidden;
+  width: 42px;
+  padding: 17px 9px 13px 9px;
+
+  background-color: inherit;
+  border: none;
+  outline: none;
+
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .search__field {
-  width: 271px;
+  width: 247px;
   height: 100%;
   padding: 0;
 

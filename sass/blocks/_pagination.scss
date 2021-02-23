@@ -6,15 +6,15 @@
 }
 
 .pagination__item {
-  padding-right: 10px;
+  margin-right: 10px;
 
   &:last-child {
-    padding-right: 0;
+    margin-right: 0;
   }
 }
 .pagination__link {
+  display: inline-flex;
   padding: 10px 15px;
-  margin-right: 10px;
 
   font-size: 13px;
   line-height: 18px;

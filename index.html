@@ -21,26 +21,29 @@
               class="logo__img">
           </a>
           <form class="menu__search search">
-           <!-- <button type="submit" class="search__btn"></button>-->
+           <button type="submit" class="search__btn">
+             <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path fill-rule="evenodd" clip-rule="evenodd"
+                 d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z"
+                 fill="#fff" /></svg>
+           </button>
             <input type="text" placeholder="Поиск:" class="search__field">
           </form>
           <ul class="menu__list checkout">
             <li class="checkout__item">
-              <svg width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"
-                  fill="#fff" /></svg>
-              <a href="#" class="checkout__link checkout__link--bookmark">Закладки: 0</a>
+              <div class="checkout__inner checkout__inner--bookmark">
+                <a href="#" class="checkout__link checkout__link--bookmark">Закладки: 0</a>
+              </div>
             </li>
             <li class="checkout__item">
-              <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951V2z"
-                  fill="#fff" /></svg>
-              <a href="#" class="checkout__link checkout__link--cart">Корзина: 0</a>
+              <div class="checkout__inner checkout__inner--cart">
+                <a href="#" class="checkout__link checkout__link--cart">Корзина: 0</a>
+              </div>
             </li>
             <li class="checkout__item">
-              <a href="#" class="checkout__link checkout__link--order">Оформить заказ</a>
+              <div class="checkout__inner checkout__inner--order">
+                <a href="#" class="checkout__link checkout__link--order">Оформить заказ</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -57,7 +60,13 @@
             <p class="header-info__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="header-info__user-menu user-menu">
-            <a class="user-menu__link user-menu__link--login">Войти</a>
+            <a class="user-menu__link user-menu__link--login">
+              <svg width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.167 8.5L5.714 0v6H0v5h5.714v6l8.453-8.5z" fill="#C5C5C5" />
+                <path
+                  d="M16.177 15.01H11.39V17h4.787c2.074 0 2.861-1.81 2.885-3.026V3.028C19.038 1.811 18.252 0 16.177 0H11.39v1.99h4.787c.8 0 .945.681.962 1.057v10.904c-.016.376-.163 1.059-.962 1.059z"
+                  fill="#C5C5C5" /></svg>
+              Войти</a>
             <a class="user-menu__link user-menu__link--registration">Регистрация</a>
           </div>
         </div>
@@ -147,8 +156,8 @@
         <div class="popular-goods__main">
           <article class="popular-goods__card card-good">
             <div class="card-good__wrapper card-good__wrapper--hidden">
-              <button type="button" class="card-good__button card-good__button--buy">Купить</button>
-              <button type="button" class="card-good__button card-good__button--bookmark">В закладки</button>
+              <a type="button" class="card-good__button card-good__button--buy">Купить</a>
+              <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
             </div>
             <img src="img/card/bosch9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000"
               class="card-good__img">
@@ -158,8 +167,8 @@
           </article>
           <article class="popular-goods__card card-good card-good--new">
             <div class="card-good__wrapper card-good__wrapper--hidden">
-              <button type="button" class="card-good__button card-good__button--buy">Купить</button>
-              <button type="button" class="card-good__button card-good__button--bookmark">В закладки</button>
+              <a type="button" class="card-good__button card-good__button--buy">Купить</a>
+              <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
             </div>
             <img src="img/card/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"
             class="card-good__img">
@@ -169,8 +178,8 @@
           </article>
           <article class="popular-goods__card card-good">
             <div class="card-good__wrapper card-good__wrapper--hidden">
-              <button type="button" class="card-good__button card-good__button--buy">Купить</button>
-              <button type="button" class="card-good__button card-good__button--bookmark">В закладки</button>
+              <a type="button" class="card-good__button card-good__button--buy">Купить</a>
+              <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
             </div>
             <img src="img/card/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"
             class="card-good__img">
@@ -180,8 +189,8 @@
           </article>
           <article class="popular-goods__card card-good card-good--new">
             <div class="card-good__wrapper card-good__wrapper--hidden">
-              <button type="button" class="card-good__button card-good__button--buy">Купить</button>
-              <button type="button" class="card-good__button card-good__button--bookmark">В закладки</button>
+              <a type="button" class="card-good__button card-good__button--buy">Купить</a>
+              <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
             </div>
             <img src="img/card/bosch2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"
             class="card-good__img">
