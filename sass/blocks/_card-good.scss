@@ -24,31 +24,30 @@
   border: 1px solid var(--border-card);
 
   overflow: hidden;
+}
 
-  &--new::after {
-    content: "new";
-    position: absolute;
-    top: 10px;
-    left: 145px;
+.card-good__new {
+  position: absolute;
+  top: 10px;
+  left: 145px;
 
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
 
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    font-family: "Cuprum", Verdana, sans-serif;
-    text-transform: uppercase;
-    color: var(--white);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum", Verdana, sans-serif;
+  text-transform: uppercase;
+  color: var(--white);
 
-    background-color: var(--basic-red);
-    background-position: 0 0;
-    transform: rotate(45deg);
-  }
+  background-color: var(--basic-red);
+  background-position: 0 0;
+  transform: rotate(45deg);
 }
 
 .card-good__wrapper {
@@ -73,13 +72,13 @@
   justify-self: center;
 }
 
-.card-good__prace {
+.card-good__price {
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
-.card-good__prace--old {
+.card-good__price--old {
   grid-area: old;
   padding-bottom: 13px;
 
@@ -87,7 +86,7 @@
   color: var(--basic-greylight);
 }
 
-.card-good__prace--new {
+.card-good__price--new {
   grid-area: new;
 
   position: relative;
@@ -111,10 +110,8 @@
     width: 19px;
     height: 38px;
     border-top: 19px solid transparent;
-border-left: 19px solid var(--basic-red);
-border-bottom: 19px solid transparent;
-   //background-color: var(--basic-red);
-   //background-position: 0 0;
+    border-left: 19px solid var(--basic-red);
+    border-bottom: 19px solid transparent;
   }
 }
 
@@ -123,6 +120,8 @@ border-bottom: 19px solid transparent;
   line-height: 18px;
   text-transform: uppercase;
   border: none;
+
+  cursor: pointer;
 
   &--buy {
     padding: 10px 41px 10px 52px;
