@@ -1,4 +1,5 @@
 .service {
+  padding-bottom: 4px;
   background-color: var(--basic-background);
 }
 
@@ -43,7 +44,7 @@
 }
 
 .service__desc {
-  min-height: 283px;
+  height: 261px;
 
   background-position: right 40%;
   background-repeat: no-repeat;
@@ -51,20 +52,17 @@
 
   &--delivery {
     background-image: url("../img/service/delivery.png ");
-    background-size: 468px 261px;
   }
 
   &--guarantee {
     display: none;
 
     background-image: url("../img/service/guarantee.png");
-    background-size: 389px 283px;
   }
 
   &--credit {
     display: none;
 
     background-image: url("../img/service/credit.png");
-    background-size: 389px 283px;
   }
 }
