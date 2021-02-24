@@ -45,28 +45,6 @@
     background-image: url("../img/icon/delivery.svg");
     background-position: 83% 56%;
   }
-
-  &--new::after {
-    content: "new";
-    position: absolute;
-    top: 10px;
-    left: 225px;
-
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 30px;
-
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: var(--white);
-
-    background-color: var(--basic-red);
-    background-position: 0 0;
-    transform: rotate(45deg);
-  }
 }
 
 .card__title {
@@ -94,4 +72,28 @@
   color: var(--white);
 
   background: var(--white-opacity03);
+}
+
+.card__new {
+  position: absolute;
+  top: 10px;
+  left: 225px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum", Verdana, sans-serif;
+  text-transform: uppercase;
+  color: var(--white);
+
+  background-color: var(--basic-red);
+  background-position: 0 0;
+  transform: rotate(45deg);
 }

@@ -3,6 +3,11 @@
 }
 
 .user__inner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 15px;
   margin-bottom: 7px;
   font-size: 21px;
   line-height: 21px;
@@ -11,32 +16,35 @@
 }
 
 .user__text {
-  padding: 12px 57px 12px 56px;
-  margin: 0;
+  margin: 0 20px 0 0;
 }
 
 .user__link {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-darkblue);
-}
 
-.user__link--order {
+  &--login {
+    margin-right: 21px;
+  }
+
+  &--order {
+    position: relative;
     padding-right: 32px;
 
   &::after {
     content: " ";
-    position: relative;
-    left: 18px;
+    position: absolute;
+    top: 8px;
+    left: 90px;
 
     display: inline-block;
-    width: 6px;
-    height: 6px;
-
-    //padding-left: 13px;
+    width: 4px;
+    height: 4px;
 
     background-color: #32425C;
     border-radius: 50%;
     background-repeat: no-repeat;
+    }
   }
 }
