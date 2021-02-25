@@ -37,4 +37,12 @@
 
  .brands__link {
    display: flex;
+
+   &:hover {
+     box-shadow: 0px 4px 20px var(--black-opacity);
+   }
+
+   &:active {
+     opacity: 0.5;
+   }
 }

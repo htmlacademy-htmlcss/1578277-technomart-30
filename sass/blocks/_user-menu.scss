@@ -17,4 +17,13 @@
     padding: 12px 24px 12px 24px;
     margin-left: 10px;
   }
+
+ &:hover {
+    color: var(--basic-red);
+  }
+
+}
+
+.user-menu__link:hover .login__svg path {
+  fill: var(--basic-grey);
 }
