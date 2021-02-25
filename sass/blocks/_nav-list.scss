@@ -31,7 +31,25 @@
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-background);
+
+  &:hover {
+    border-bottom: 1px solid var(--white);
+  }
+
+  &:active {
+    opacity: 0.5;
+    border: none;
+  }
+
   &--yellow {
     color: var(--special-yellowlight);
+
+    &:hover {
+      border-bottom: 1px solid var(--special-yellowlight);
+    }
+
+    &:active {
+      border: none;
+    }
   }
 }

@@ -24,6 +24,18 @@
   border: 1px solid var(--border-card);
 
   overflow: hidden;
+
+  &:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.card-good:hover .card-good__img {
+  display: none;
+}
+
+.card-good:hover .card-good__wrapper {
+  display: block;
 }
 
 .card-good__new {
@@ -116,29 +128,63 @@
 }
 
 .card-good__button {
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  font-family: "Cuprum", Verdana, sans-serif;
   text-transform: uppercase;
+
   border: none;
+  border-radius: 2px;
 
   cursor: pointer;
 
   &--buy {
+    position: relative;
     padding: 10px 41px 10px 52px;
     margin-bottom: 10px;
 
     color: var(--white);
     background-color: var(--basic-green);
-    box-shadow: inset 0px -3px 0px var(--speacial-green);
+    box-shadow: inset 0px -3px 0px var(--special-green);
     border-radius: 2px;
+
+    &:hover {
+      background-color: var(--success);
+    }
+
+    &:active {
+      background-color: var(--special-darkgreen);
+    }
+
+    &::before {
+    content: " ";
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 14px;
+    height: 16px;
+
+    background-image: url("../img/icon/cart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.5;
+    }
   }
 
   &--bookmark {
-    padding: 8px 31px 6px 30px;
+    padding: 8px 30px 7px 31px;
 
     color: var(--basic-darkblue);
     background-color: transparent;
     border: 3px solid var(--basic-green);
-    border-radius: 2px;
+
+    &:hover {
+      border: 3px solid var(--basic-darkblue);
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 }

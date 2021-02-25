@@ -72,6 +72,14 @@
   color: var(--white);
 
   background: var(--white-opacity03);
+
+  &:hover {
+    background: var(--greylight03);
+  }
+
+  &:active {
+    background: var(--basic-greylight03);
+  }
 }
 
 .card__new {
