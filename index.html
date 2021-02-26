@@ -119,26 +119,34 @@
             <a href="#" class="card__link">Бесплатно</a>
           </article>
           <div class="directory__slider slider">
-            <div class="slider__container slider__container--drill visually-hidden">
+            <div class="slider__container slider__container--drill ">
               <img src="img/slider/slider-drill.jpg" width="620" height="266" alt="Мужчина работает дрелью" class="slider__img" />
-              <p class="slider__description slider-desc">
-                <span class="slider-desc slider-desc--large">Дрели</span><br>
-                Соседям на радость!
+              <p class="slider__description">
+                <span class="slider__desc slider__desc--large">Дрели</span><br>
+                <span class="slider__desc">Соседям на радость!</span>
               </p>
               <button class="slider__button slider__button--prev" type="button"></button>
               <button class="slider__button slider__button--next" type="button" disabled></button>
               <a class="slider__link btn-primary" href="catalog.html">Открыть каталог</a>
+              <ul class="slider__list-point">
+                <li class="slider__point slider__point--current"></li>
+                <li class="slider__point"></li>
+              </ul>
             </div>
             <div class="slider__container slider__container--current">
               <img src="img/slider/slider-perforator.jpg" width="620" height="266" alt="Мужчина работает перфоратором"
                 class="slider__img" />
               <p class="slider__description">
                 <span class="slider__desc slider__desc--large">Перфораторы</span><br>
-                Настоящие мужские игрушки
+                <span class="slider__desc">Настоящие мужские игрушки</span>
               </p>
               <button class="slider__button slider__button--prev" type="button"></button>
               <button class="slider__button slider__button--next" type="button" disabled></button>
               <a class="slider__link btn-primary" href="catalog.html">Открыть каталог</a>
+              <ul class="slider__list-point">
+                <li class="slider__point"></li>
+                <li class="slider__point slider__point--current"></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -311,7 +319,7 @@
             <li class="company__item">Автотрейдинг</li>
             <li class="company__item">ЖелДорЭкспедиция</li>
           </ul>
-          <a class="company__link" href="#">Подробнее о компании</a>
+          <a class="company__link btn-primary" href="#">Подробнее о компании</a>
         </section>
         <section class="about__contacts contacts">
           <h2 class="contacts__title">Контакты</h2>
@@ -322,7 +330,7 @@
           <a href="#" class="contacts__map-link">
             <img src="img/service/map.jpg" width="300" height="158" alt="Карта" class="contacts__map">
           </a>
-          <a class="contacts__btn">Заблудились? Напишите нам!</a>
+          <a class="contacts__btn btn-primary" href="#">Заблудились? Напишите нам!</a>
         </section>
     </section>
   </main>
@@ -414,31 +422,34 @@
       </div>
     </div>
   </footer>
-  <section class="modal-window modal-window--feedback">
+  <section class="modal-window">
     <h2 class="visually-hidden">Обратная связь</h2>
     <form action="https://echo.htmlacademy.ru" method="post" class="modal-window__form feedback">
       <div class="feedback__wrapper feedback__wrapper--user">
         <label for="user-name">Ваше имя:</label>
-        <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+        <input class="feedback__item" id="user-name" type="text" name="user-name"
+          placeholder="Имя Фамилия">
       </div>
       <div class="feedback__wrapper feedback__wrapper--email">
         <label for="email-user">Ваш e-mail:</label>
-        <input id="email-user" type="email" name="email-user" placeholder="email@example.com">
+        <input class="feedback__item" id="email-user" type="email" name="email-user"
+          placeholder="email@example.com">
       </div>
       <div class="feedback__wrapper feedback__wrapper--text">
         <label for="text-field">Текст письма:</label>
-        <input id="text-field" type="text" name="text-field" placeholder="В свободной форме">
-      </div>
-      <div class="feedback__wrap">
-        <button type="submit" class="feedback__entry">Войти</button>
+        <input class="feedback__item feedback__item--text" id="text-field" type="text" name="text-field"
+          placeholder="В свободной форме">
       </div>
     </form>
-    <button type="button" class="modal-window__button">Закрыть</button>
+    <div class="modal-window__wrap">
+      <button type="submit" class=".modal-window__btn btn-primary">Отправить</button>
+    </div>
+   <button type="button" class="modal-window__close"></button>
   </section>
-  <section class="modal-window modal-window--map">
+ <section class="modal-window modal-window--map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <!-- Здесь будет карта -->
-    <button type="button" class="modal-window__button">Закрыть</button>
+    <img src="img/modal-map.jpg" alt="Карта" class="modal-window__img">
+    <button type="button" class="modal-window__close"></button>
   </section>
 </body>
 

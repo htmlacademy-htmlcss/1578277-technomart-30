@@ -13,4 +13,12 @@
   background-color: var(--basic-red);
 
   cursor: pointer;
+
+  &:hover {
+    background-color: var(--special-red);
+  }
+
+  &:active {
+    background-color: var(--error);
+  }
 }

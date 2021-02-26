@@ -2,9 +2,10 @@
   padding-right: 150px;
   max-width: 640px;
 }
+
 .company__title {
   margin-top: 0;
-  margin-bottom:24px;
+  margin-bottom: 24px;
 
   font-size: 30px;
   line-height: 30px;
@@ -53,18 +54,9 @@
 }
 
 .company__link {
-  display: flex;
-  flex-wrap: wrap;
   width: min-content;
   min-width: 220px;
 
   padding: 11px 40px 11px 40px;
   margin: 0;
-
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: var(--white);
-
-  background-color: var(--basic-red);
 }

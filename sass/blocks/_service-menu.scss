@@ -31,11 +31,11 @@
 
   color: var(--white);
 
-&:hover {
-  background-color: var(--basic-dark);
-}
+  &:hover {
+    background-color: var(--basic-dark);
+  }
 
-&:active {
+  &:active {
     color: var(--basic-darkblue);
     background-color: var(--white);
   }

@@ -11,14 +11,13 @@
 .search__btn {
   position: absolute;
   width: 42px;
-  height:42px;
+  height: 42px;
   padding: 12px 9px 13px 9px;
 
   background-color: inherit;
   border: none;
   outline: none;
 
-  //opacity: 0.5;
   cursor: pointer;
 }
 
@@ -36,7 +35,7 @@
     background-color: var(--white);
   }
 
-  &::-webkit-input-placeholder {
+  &::placeholder {
     font-size: 18px;
     color: var(--white);
   }
@@ -44,13 +43,9 @@
 
 .search__svg {
   fill-opacity: 0.5;
-
-  /*&:hover {
-    fill-opacity: 1;
-  }*/
 }
 
-.search__field:focus + button .search__svg path {
+.search__field:focus+.search__btn path {
   fill: var(--basic-red);
   fill-opacity: 1;
 }

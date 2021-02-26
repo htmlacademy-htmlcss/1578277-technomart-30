@@ -5,6 +5,7 @@
   font-family: "PT Sans", Tahoma, sans-serif;
   text-transform: uppercase;
 }
+
 .filter__header {
   background-color: var(--basic-beige);
   border-radius: 5px;
@@ -62,42 +63,59 @@
   user-select: none;
 }
 
-.filter__checkbox + label::before {
+.filter__checkbox+label::before {
   content: " ";
   position: absolute;
   left: -35px;
   top: -2px;
   width: 23px;
   height: 23px;
-  background-image: url("../img/icon/filter-checkbox-off.svg");
+  background-image: url("../img/icon/checkbox-off.svg");
 }
 
-.filter__checkbox:checked + label::before{
+.filter__checkbox:hover+label::before {
+  background-image: url("../img/icon/checkbox-off-hover.svg");
+}
+
+.filter__checkbox:checked+label::before {
   display: none;
 }
 
-.filter__checkbox:checked + label::after {
+.filter__checkbox:checked+label::after {
   content: "";
   position: absolute;
   top: -2px;
   left: -35px;
   width: 25px;
   height: 23px;
-  background-image: url("../img/icon/filter-checkbox-on.svg");
+  background-image: url("../img/icon/checkbox-on.svg");
 }
 
-.filter__radio + label::before {
+.filter__checkbox:checked:hover+label::after {
+  background-image: url("../img/icon/checkbox-on-hover.svg");
+}
+
+.filter__checkbox:disabled+label::before,
+.filter__checkbox:disabled+label {
+  opacity: 0.5;
+}
+
+.filter__radio+label::before {
   content: " ";
   position: absolute;
   left: -35px;
   top: -2px;
   width: 25px;
   height: 25px;
-  border: 4px solid var(--radio-beige);
+  border: 4px solid var(--greylight);
   border-radius: 50%;
 }
 
-.filter__radio:checked + label::after {
+.filter__radio:hover+label::before {
+  border: 4px solid var(--grey);
+}
+
+.filter__radio:checked+label::after {
   content: "";
   position: absolute;
   top: 6px;
@@ -106,6 +124,15 @@
   height: 9px;
   background-color: var(--greylight);
   border-radius: 50%;
+}
+
+.filter__radio:checked:hover+label::after {
+  background-color: var(--grey);
+}
+
+.filter__radio:disabled+label::before,
+.filter__radio:disabled+label {
+  opacity: 0.5;
 }
 
 .filter__fields {
@@ -118,7 +145,6 @@
   }
 
   &--power {
-
     padding: 0 0 37px 0;
   }
 }
@@ -131,4 +157,3 @@
   background-color: transparent;
   border: 1px solid var(--border-card);
 }
-
