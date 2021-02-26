@@ -1,11 +1,13 @@
 .page-header {
   padding-bottom: 60px;
-
   background-color: var(--basic-lightpink);
 }
 
+.page-header__container {
+  display: flex;
+}
+
 .page-header__submenu {
-  max-width: 940px;
   padding-left: 0;
   padding-right: 0;
 }

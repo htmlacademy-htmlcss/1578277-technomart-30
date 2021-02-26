@@ -55,14 +55,14 @@
         <div class="header-info__user user">
           <div class="user__inner">
             <a href="#" class="user__link user__link--login">
-              <svg width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="user__svg" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z"
                   fill="#C5C5C5" /></svg>
             </a>
             <p class="user__text">Равшан Джамшутович</p>
             <a href="#" class="user__link user__link--exit">
-              <svg width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="user__svg" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5" />
                 <path
                   d="M2.106 13.952V3.048c.018-.376.17-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.086 3.027v10.946C.113 15.189.939 17 3.117 17h5.027v-1.99H3.116c-.84 0-.992-.683-1.01-1.058z"
@@ -71,7 +71,7 @@
           </div>
           <div class="user__box">
             <a href="#" class="user__link user__link--order">Мои заказы</a>
-            <a href="#" class="user__link">Личный кабинет</a>
+            <a href="#" class="user__link user__link--account">Личный кабинет</a>
           </div>
         </div>
       </div>
@@ -212,12 +212,14 @@
               <li class="sort__item">
                 <a href="#" class="sort__link">По функционалу</a>
               </li>
-              <!--<li class="sort__item sort__item--arrow-top">
-                <a href="#" class="sort__link"></a>
+            </ul>
+            <ul class="sort__list-arrow">
+              <li class="sort__item-arrow">
+                <a href="#" class="sort__link-arrow sort__link-arrow--up sort__link-arrow--current"></a>
               </li>
-              <li class="sort__item sort__item--arrow-bottom">
-                <a href="#" class="sort__link"></a>
-              </li> -->
+              <li class="sort__item">
+                <a href="#" class="sort__link-arrow sort__link-arrow--down"></a>
+              </li>
             </ul>
           </div>
           <div class="cards__wrapper">
@@ -322,7 +324,7 @@
           <div class="cards__box pagination">
             <ul class="pagination__list">
               <li class="pagination__item">
-                <a class="pagination__link">1</a>
+                <a class="pagination__link pagination__link--current">1</a>
               </li>
               <li class="pagination__item">
                 <a href="#" class="pagination__link">2</a>
@@ -440,14 +442,14 @@
       </div>
     </div>
   </footer>
-  <section class="modal-cart">
+  <section class="modal-window">
     <h2 class="visually-hidden">Информация о добавлении товара в корзину</h2>
-    <p class="modal-cart__text">Товар добавлен в корзину!</p>
-    <div class="modal-cart__wrap">
-      <a href="#" class="modal-cart__link modal-cart__link--order">Оформить заказ</a>
-      <a href="#" class="modal-cart__link modal-cart__link--continue">Продолжить покупки</a>
+    <p class="modal-window__text">Товар добавлен в корзину!</p>
+    <div class="modal-window__wrap modal-window__wrap--cart">
+      <a href="#" class="modal-window__btn modal-window__btn--order btn-primary">Оформить заказ</a>
+      <a href="#" class="modal-window__btn modal-window__btn--continue btn-primary">Продолжить покупки</a>
     </div>
-    <button type="button" class="modal-cart__button">Закрыть</button>
+    <button type="button" class="modal-window__close"></button>
   </section>
 </body>
 

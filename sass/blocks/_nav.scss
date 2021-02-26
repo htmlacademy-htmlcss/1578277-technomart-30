@@ -3,30 +3,29 @@
   box-shadow: inset 0px -5px 0px var(--basic-dark);
 
   &__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  //padding: 16px 53px 20px 53px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-  list-style: none;
-  margin: 0;
- }
-
- &__link {
-   color: var(--white);
- }
-
- &__item {
-  padding: 16px 32px 20px 25px;
-
-
- &:hover {
-   background-color: var(--basic-dark);
+    list-style: none;
+    margin: 0;
   }
 
- &:active {
-   opacity: 0.5;
-   background-color: var(--darkgrey);
+  &__link {
+    color: var(--white);
   }
- }
+
+  &__item {
+    padding: 16px 32px 20px 25px;
+
+
+    &:hover {
+      background-color: var(--basic-dark);
+    }
+
+    &:active {
+      opacity: 0.5;
+      background-color: var(--darkgrey);
+    }
+  }
 }

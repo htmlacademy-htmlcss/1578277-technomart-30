@@ -18,12 +18,11 @@
     margin-left: 10px;
   }
 
- &:hover {
+  &:hover {
     color: var(--basic-red);
   }
-
 }
 
-.user-menu__link:hover .login__svg path {
+.user-menu__link:hover path {
   fill: var(--basic-grey);
 }

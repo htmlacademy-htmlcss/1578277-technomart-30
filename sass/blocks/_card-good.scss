@@ -8,10 +8,7 @@
     ". old ."
     "new new new";
   grid-template-rows:
-    172px
-    1fr
-    auto
-    auto;
+    172px 1fr auto auto;
   width: 220px;
 
   font-style: normal;
@@ -158,17 +155,17 @@
     }
 
     &::before {
-    content: " ";
-    position: absolute;
-    top: 10px;
-    left: 30px;
-    width: 14px;
-    height: 16px;
+      content: " ";
+      position: absolute;
+      top: 10px;
+      left: 30px;
+      width: 14px;
+      height: 16px;
 
-    background-image: url("../img/icon/cart.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    opacity: 0.5;
+      background-image: url("../img/icon/cart.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      opacity: 0.5;
     }
   }
 

@@ -35,14 +35,14 @@
   list-style: none;
 }
 
- .brands__link {
-   display: flex;
+.brands__link {
+  display: flex;
 
-   &:hover {
-     box-shadow: 0px 4px 20px var(--black-opacity);
-   }
+  &:hover {
+    box-shadow: 0px 4px 20px var(--black-opacity);
+  }
 
-   &:active {
-     opacity: 0.5;
-   }
+  &:active {
+    opacity: 0.5;
+  }
 }

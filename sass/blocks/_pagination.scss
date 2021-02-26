@@ -12,6 +12,7 @@
     margin-right: 0;
   }
 }
+
 .pagination__link {
   display: inline-flex;
   padding: 10px 15px;
@@ -24,4 +25,17 @@
 
   border: 1px solid var(--border-pink);
   border-radius: 2px;
+
+  &--current {
+    color: var(--white);
+    background-color: var(--basic-red);
+  }
+
+  &:hover {
+    border: 1px solid var(--greylight);
+  }
+
+  &:active {
+    border: 1px solid var(--basic-red);
+  }
 }
