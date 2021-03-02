@@ -93,4 +93,14 @@
     border-top-color: var(--basic-red);
     border-bottom-color: var(--basic-red);
   }
+
+  &:hover {
+    border-top-color: var(--basic-greylight);
+    border-bottom-color: var(--basic-greylight);
+  }
+
+  &:active {
+    border-top-color: var(--error);
+    border-bottom-color: var(--error);
+  }
 }

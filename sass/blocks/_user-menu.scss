@@ -1,6 +1,8 @@
 .user-menu {
   display: flex;
   flex-wrap: wrap;
+
+  margin-top: 5px;
 }
 
 .user-menu__link {
@@ -8,6 +10,8 @@
   line-height: 21px;
 
   background-color: var(--white);
+
+  cursor: pointer;
 
   &--login {
     padding: 12px 27px 12px 19px;
@@ -21,8 +25,21 @@
   &:hover {
     color: var(--basic-red);
   }
+
+  &:active {
+    color: var(--greylight);
+  }
+
+  &:focus {
+   color: aqua;
+  }
 }
 
 .user-menu__link:hover path {
   fill: var(--basic-grey);
+}
+
+
+.user-menu__link:active path {
+  fill: var(--greylight);
 }

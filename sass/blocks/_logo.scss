@@ -6,7 +6,7 @@
 
   background-color: var(--basic-red);
   box-shadow: 0 5px 0 var(--black-opacity24),
-              0 5px 0 var(--basic-red);
+    0 5px 0 var(--basic-red);
 
   &--footer {
     max-height: 63px;
@@ -18,6 +18,11 @@
   &:active {
     background-color: var(--error);
     box-shadow: 0 5px 0 var(--black-opacity24),
-               0 5px 0 var(--error);
+      0 5px 0 var(--error);
   }
+}
+
+.logo__img {
+  max-width: 100%;
+  object-fit: contain;
 }

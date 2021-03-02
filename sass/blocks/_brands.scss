@@ -1,5 +1,5 @@
 .brands {
-  padding-bottom: 118px;
+  padding-bottom: 70px;
 }
 
 .brands__header {
@@ -45,4 +45,9 @@
   &:active {
     opacity: 0.5;
   }
+}
+
+.brands__img {
+  max-width: 100%;
+  object-fit: contain;
 }

@@ -9,23 +9,15 @@
 
   padding: 12px 15px;
   margin-bottom: 7px;
-  font-size: 21px;
-  line-height: 21px;
 
   background-color: var(--white);
-
-  &:active {
-    opacity: 0.5;
-  }
 }
-
-.user__inner:hover .user__svg path {
-  fill: var(--basic-grey);
-}
-
 
 .user__text {
-  margin: 0 20px 0 0;
+  margin: 0 0px 0 21px;
+
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .user__link {
@@ -34,7 +26,9 @@
   color: var(--basic-darkblue);
 
   &--login {
+    display: inline-flex;
     margin-right: 21px;
+    color: var(--black);
   }
 
   &--order {
@@ -56,6 +50,11 @@
       background-repeat: no-repeat;
     }
   }
+
+  &:active {
+    color: var(--greylight);
+  }
+
 }
 
 .user__link--order:hover,
@@ -66,6 +65,13 @@
 
 .user__link--order:active,
 .user__link--account:active {
-  color: var(--basic-darkblue);
-  opacity: 0.5;
+  color: var(--greylight);
+}
+
+.user__link:hover .user__svg path {
+  fill: var(--basic-grey);
+}
+
+.user__link:active .user__svg path {
+  fill: var(--greylight);
 }
