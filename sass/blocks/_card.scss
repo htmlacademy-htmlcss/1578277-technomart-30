@@ -5,6 +5,7 @@
   padding-right: 143px;
   padding-bottom: 21px;
   padding-left: 22px;
+
   background-repeat: no-repeat;
   overflow: hidden;
 
@@ -21,7 +22,7 @@
 
     background-color: var(--special-blue);
     background-image: url("../img/icon/tools.svg");
-    background-position: 88% 56%;
+    background-position: 86% 56%;
   }
 
   &--machinery {
@@ -29,7 +30,7 @@
 
     background-color: var(--special-lilac);
     background-image: url("../img/icon/machinery.svg");
-    background-position: 83% 56%;
+    background-position: 86% 50%;
   }
 
   &--sale {
@@ -37,14 +38,14 @@
 
     background-color: var(--special-greenlight);
     background-image: url("../img/icon/sale.svg");
-    background-position: 83% 56%;
+    background-position: 82% 50%;
   }
 
   &--delivery {
     grid-area: delivery;
     background-color: var(--special-yellow);
     background-image: url("../img/icon/delivery.svg");
-    background-position: 83% 56%;
+    background-position: 86% 50%;
   }
 }
 

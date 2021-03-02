@@ -12,8 +12,14 @@
 
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   text-transform: uppercase;
-  color: var(--basic-darkblue);
+  color: var(--black);
+
+  &--desc {
+    margin-bottom: 30px;
+    color: var(--basic-darkblue);
+  }
 }
 
 .service__text {
@@ -44,9 +50,9 @@
 }
 
 .service__desc {
-  height: 261px;
+  min-height: 283px;
 
-  background-position: right 40%;
+  background-position: right 20px;
   background-repeat: no-repeat;
 
 

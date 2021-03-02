@@ -12,7 +12,7 @@
   position: absolute;
   width: 42px;
   height: 42px;
-  padding: 12px 9px 13px 9px;
+  padding: 12px 9px 13px 17px;
 
   background-color: inherit;
   border: none;
@@ -45,7 +45,7 @@
   fill-opacity: 0.5;
 }
 
-.search__field:focus+.search__btn path {
+.search__field:focus + .search__btn path {
   fill: var(--basic-red);
   fill-opacity: 1;
 }

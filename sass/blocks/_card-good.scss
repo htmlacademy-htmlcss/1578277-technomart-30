@@ -7,8 +7,7 @@
     "title title title"
     ". old ."
     "new new new";
-  grid-template-rows:
-    172px 1fr auto auto;
+  grid-template-rows: 170px 1fr auto auto;
   width: 220px;
 
   font-style: normal;
@@ -71,14 +70,21 @@
 
 .card-good__title {
   grid-area: title;
-  padding-bottom: 6px;
-  margin: 0;
+
+  margin: 8px 18px 6px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .card-good__img {
   grid-area: img;
   align-self: center;
   justify-self: center;
+
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .card-good__price {
