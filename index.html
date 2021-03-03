@@ -55,7 +55,8 @@
           </div>
           <div class="header-info__user-menu user-menu">
             <a class="user-menu__link user-menu__link--login" tabindex="0">
-              <svg class="login__svg" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="user-menu__svg" aria-hidden="true" focusable="false" width="20" height="17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.167 8.5L5.714 0v6H0v5h5.714v6l8.453-8.5z" fill="#C5C5C5" />
                 <path
                   d="M16.177 15.01H11.39V17h4.787c2.074 0 2.861-1.81 2.885-3.026V3.028C19.038 1.811 18.252 0 16.177 0H11.39v1.99h4.787c.8 0 .945.681.962 1.057v10.904c-.016.376-.163 1.059-.962 1.059z"
@@ -332,7 +333,8 @@
           </p>
           <a href="#" class="contacts__map-link">
             <img src="img/service/map.jpg" width="300" height="158"
-              alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" class="contacts__map">
+              alt="Офис компании по адресу город Санкт-Петербург, улица Большая Конюшенная, дом 19/8"
+              class="contacts__map">
           </a>
           <a class="contacts__btn btn-primary" href="#">Заблудились? Напишите нам!</a>
         </section>
@@ -369,7 +371,7 @@
           <a href="#" class="nav-list__link nav-list__link--yellow">Материалы</a>
         </li>
         <li class="nav-list__item nav-list__item--yel">
-          <a href="#" class="nav-list__link nav-list__link nav-list__link--yellow">Техника</a>
+          <a href="#" class="nav-list__link nav-list__link--yellow">Техника</a>
         </li>
         <li class="nav-list__item">
           <a href="#" class="nav-list__link nav-list__link nav-list__link--yellow">Инструмент</a>
@@ -388,27 +390,20 @@
         <ul class="footer-contacts__list">
           <li class="footer-contacts__item">
             <a href="#" title="Вконтакте" target="_blank" rel="noopener noreferrer"
-              class="footer-contacts__link footer-contacts__link--socials">
-              <svg width="26" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15.54 11.728c.92-.29 2.1 1.913 3.354 2.755.942.639 1.663.501 1.663.501l3.345-.047s1.747-.105.921-1.457c-.068-.112-.484-1.002-2.489-2.833-2.096-1.915-1.812-1.605.712-4.916 1.538-2.019 2.153-3.251 1.96-3.776-.185-.506-1.314-.374-1.314-.374l-3.768.025c-.367 0-.678.111-.82.483-.003.003-.598 1.562-1.391 2.886-1.677 2.802-2.346 2.952-2.623 2.776-.637-.406-.476-1.628-.476-2.497 0-2.716.416-3.849-.815-4.141-.411-.098-.711-.161-1.76-.17-1.34-.02-2.479 0-3.124.308-.428.209-.757.667-.557.693.25.033.811.15 1.112.55.386.517.374 1.677.374 1.677s.22 3.198-.52 3.594c-.508.272-1.203-.283-2.699-2.827-.763-1.301-1.34-2.74-1.34-2.74s-.112-.267-.314-.413c-.24-.173-.578-.229-.578-.229L.817 1.58s-.538.015-.735.245c-.175.205-.015.627-.015.627s2.802 6.45 5.974 9.7c2.908 2.983 6.213 2.785 6.213 2.785h1.497s.452-.05.683-.292c.216-.225.206-.648.206-.648s-.03-1.977.9-2.268z"
-                  fill="#fff" /></svg>
+              class="footer-contacts__link footer-contacts__link--socials footer-contacts__link--vk">
+              <span class="visually-hidden">Ссылка на страницу компании в социальной сети "В Контакте"</span>
             </a>
           </li>
           <li class="footer-contacts__item">
             <a href="#" title="Facebook" target="_blank" rel="noopener noreferrer"
-              class="footer-contacts__link footer-contacts__link--socials">
-              <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff" /></svg>
+              class="footer-contacts__link footer-contacts__link--socials footer-contacts__link--facebook">
+              <span class="visually-hidden">Ссылка на страницу компании в социальной сети "Facebook"</span>
             </a>
           </li>
           <li class="footer-contacts__item">
             <a href="#" title="Instagram" target="_blank" rel="noopener noreferrer"
-              class="footer-contacts__link footer-contacts__link--socials">
-              <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M3 0h15c1.65 0 3 1.35 3 3v15c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm11 10.5C14 8.57 12.43 7 10.5 7S7 8.57 7 10.5 8.57 14 10.5 14s3.5-1.57 3.5-3.5zM3 18V9h1.181c-.118.491-.18.995-.181 1.5a6.5 6.5 0 1013 0 6.451 6.451 0 00-.181-1.5H18v9H3zM14 7h4V3h-4v4z"
-                  fill="#fff" /></svg>
+              class="footer-contacts__link footer-contacts__link--socials footer-contacts__link--insta">
+              <span class="visually-hidden">Ссылка на страницу компании в социальной сети "Instagram"</span>
             </a>
           </li>
         </ul>
@@ -427,7 +422,7 @@
     </div>
   </footer>
   <section class="modal-window modal-window--hidden">
-    <h2 class="visually-hidden">Обратная связь</h2>
+    <h2 class="visually-hidden">Форма обратной связи</h2>
     <form action="https://echo.htmlacademy.ru" method="post" class="modal-window__form feedback">
       <div class="feedback__wrapper feedback__wrapper--user">
         <label for="user-name">Ваше имя:</label>
@@ -447,13 +442,17 @@
     <div class="modal-window__wrap">
       <button type="submit" class="modal-window__btn btn-primary">Отправить</button>
     </div>
-   <button type="button" class="modal-window__close" aria-label="Закрыть"></button>
+   <button type="button" class="modal-window__close">
+     <span class="visually-hidden">Закрыть</span>
+   </button>
   </section>
  <section class="modal-window modal-window--map modal-window--hidden">
-    <h2 class="visually-hidden">Как до нас добраться</h2>
-    <img src="img/modal-map.jpg" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
+    <h2 class="visually-hidden">Местоположение компании на карте</h2>
+    <img src="img/modal-map.jpg" alt="Офис компании по адресу город Санкт-Петербург, улица Большая Конюшенная, дом 19/8"
       class="modal-window__img">
-    <button type="button" class="modal-window__close" aria-label="Закрыть"></button>
+    <button type="button" class="modal-window__close">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </section>
 </body>
 

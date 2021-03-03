@@ -1121,6 +1121,18 @@ img {
   color: var(--special-yellowlight);
 }
 
+.footer-contacts__link--vk {
+  background-image: url("../img/icon/vkontakte.svg");
+}
+
+.footer-contacts__link--facebook {
+  background-image: url("../img/icon/facebook.svg");
+}
+
+.footer-contacts__link--insta {
+  background-image: url("../img/icon/instagram.svg");
+}
+
 .footer-contacts__link:hover {
   border-bottom: 1px solid var(--special-yellowlight);
 }
@@ -1146,6 +1158,8 @@ img {
           justify-content: center;
   width: 44px;
   height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--dark);
   border-radius: 50%;
 }
