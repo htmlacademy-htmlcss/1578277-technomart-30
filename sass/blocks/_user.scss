@@ -51,7 +51,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     color: var(--greylight);
   }
 

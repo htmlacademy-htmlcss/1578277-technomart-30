@@ -47,6 +47,10 @@
     border: none;
   }
 
+  &:focus {
+    outline: 1px dotted var(--special-yellowlight);
+  }
+
   &--socials {
     display: flex;
     align-items: center;
@@ -62,6 +66,10 @@
     &:active {
       background-color: var(--basic-red);
       border: none;
+    }
+
+    &:focus {
+      outline: 1px dotted var(--basic-red);
     }
   }
 }

@@ -2,6 +2,7 @@
   margin-top: 0;
   margin-bottom: 24px;
 
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -23,6 +24,10 @@
 
 .contacts__map-link {
   display: flex;
+
+  &:focus {
+    outline: 1px dotted var(--black);
+  }
 }
 
 .contacts__map {

@@ -27,10 +27,8 @@
 
 .header-info__tel {
   position: relative;
-
-padding: 4px 42px 5px 71px;
-
-align-items: center;
+  padding: 4px 42px 5px 71px;
+  align-items: center;
 
   font-weight: bold;
   font-size: 21px;
@@ -49,6 +47,11 @@ align-items: center;
     background-image: url("../img/icon/phone.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+
+  &:focus {
+    outline: none;
+    border: 3px solid var(--basic-red);
   }
 }
 

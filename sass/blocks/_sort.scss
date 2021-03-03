@@ -54,6 +54,7 @@
   }
 
   &:focus {
+    outline: none;
     border: none;
     color: var(--basic-red);
   }
@@ -99,7 +100,9 @@
     border-bottom-color: var(--basic-greylight);
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     border-top-color: var(--error);
     border-bottom-color: var(--error);
   }

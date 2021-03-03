@@ -42,7 +42,9 @@
     box-shadow: 0px 4px 20px var(--black-opacity);
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     opacity: 0.5;
   }
 }

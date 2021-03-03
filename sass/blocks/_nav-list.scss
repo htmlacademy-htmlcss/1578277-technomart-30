@@ -36,10 +36,12 @@
     border-bottom: 1px solid var(--white);
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     opacity: 0.5;
     border: none;
-  }
+    }
 
   &--yellow {
     color: var(--special-yellowlight);

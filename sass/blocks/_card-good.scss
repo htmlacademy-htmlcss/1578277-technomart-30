@@ -22,15 +22,21 @@
   overflow: hidden;
 
   &:hover {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--black-opacity);
+  }
+
+  &:focus {
+    outline: 1px dotted var(--black-opacity24);
   }
 }
 
-.card-good:hover .card-good__img {
+.card-good:hover .card-good__img,
+.card-good:focus .card-good__img {
   display: none;
 }
 
-.card-good:hover .card-good__wrapper {
+.card-good:hover .card-good__wrapper,
+.card-good:focus .card-good__wrapper {
   display: block;
 }
 
@@ -62,6 +68,8 @@
   grid-area: img;
 
   padding-top: 38px;
+  padding-left: 41px;
+  padding-right: 44px;
 }
 
 .card-good__wrapper--hidden {
@@ -131,6 +139,7 @@
 }
 
 .card-good__button {
+  display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
