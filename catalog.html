@@ -16,16 +16,19 @@
   <header class="page-header">
     <div class="page-header__menu menu">
       <div class="page-header__container container">
-        <a href="#" class="menu__link logo">
+        <a href="index.html" class="menu__link logo">
           <img src="img/logo.svg" width="108" height="17" alt="Логотип компании Техномарт" class="logo__img">
         </a>
         <form class="menu__search search">
-          <input type="text" placeholder="Поиск:" class="search__field">
-          <button type="submit" class="search__btn">
-            <svg class="search__svg" width=" 17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <label class="visually-hidden" for="search">Поле ввода поискового запроса</label>
+          <input type="text" id="search" placeholder="Поиск:" class="search__field">
+          <button type="submit" class="search__btn" tabindex="0">
+            <svg class="search__svg" aria-hidden="true" width=" 17" height="17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z"
                 fill="#fff" /></svg>
+            <span class="visually-hidden">Кнопка поиска</span>
           </button>
         </form>
         <ul class="menu__list checkout">
@@ -55,18 +58,22 @@
         <div class="header-info__user user">
           <div class="user__inner">
             <a href="#" class="user__link user__link--login">
-              <svg class="user__svg" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="user__svg" aria-hidden="true" focusable="false" width="20" height="18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z"
                   fill="#C5C5C5" /></svg>
+              <span class="visually-hidden">Страница пользователя</span>
               <p class="user__text">Равшан Джамшутович</p>
             </a>
-            <a href="#" class="user__link user__link--exit">
-              <svg class="user__svg" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="#" class="user__link user__link--exit" tabindex="0">
+              <svg class="user__svg user__svg--exit" aria-hidden="true" width="20" height="17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5" />
                 <path
                   d="M2.106 13.952V3.048c.018-.376.17-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.086 3.027v10.946C.113 15.189.939 17 3.117 17h5.027v-1.99H3.116c-.84 0-.992-.683-1.01-1.058z"
                   fill="#C5C5C5" /></svg>
+              <span class="visually-hidden">Выход</span>
             </a>
           </div>
           <div class="user__box">
@@ -130,9 +137,9 @@
           <div class="filter__header">
             <h2 class="filter__title">Фильтр:</h2>
           </div>
-          <form class="filter__form" action="https://echo.htmlacademy.ru/courses" method="get">
+          <form class="filter__form" action="https://echo.htmlacademy.ru/courses" method="get" target="_blank">
             <fieldset class="filter__range range">
-              <legend class="range__title">Цена:</legend>
+              <legend class="range__title" aria-label="Выбор ценового диапазона">Цена:</legend>
               <div class="range__results">
                 <div class="range__controls">
                   <div class="range__scale">
@@ -143,11 +150,11 @@
                 </div>
                 <div class="range__price-controls">
                   <label class="range__price range__price--min">
-                    <input type="number" name="min-price" value="0" class="range__item range__item--min">
+                    <input type="number" name="min-price" value="0" class="range__item range__item--min" aria-label="Поле ввода минимального значения цены">
                   </label>
                   -
                   <label class="range__price range__price--max">
-                    <input type="number" name="max-price" value="30000" class="range__item range__item--max">
+                    <input type="number" name="max-price" value="30000" class="range__item range__item--max" aria-label="Поле ввода максимального значения цены">
                   </label>
                 </div>
               </div>
@@ -195,7 +202,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button type="submit" class="filter__btn">Показать</button>
+            <button type="submit" class="filter__btn" tabindex="0">Показать</button>
           </form>
         </section>
         <section class="catalog__cards cards">
@@ -215,18 +222,22 @@
             </ul>
             <ul class="sort__list-arrow">
               <li class="sort__item-arrow">
-                <a href="#" class="sort__link-arrow sort__link-arrow--up sort__link-arrow--current"></a>
+                <a href="#" class="sort__link-arrow sort__link-arrow--up sort__link-arrow--current">
+                  <span class="visually-hidden">Сортировать по возрастанию</span>
+                </a>
               </li>
               <li class="sort__item">
-                <a href="#" class="sort__link-arrow sort__link-arrow--down"></a>
+                <a href="#" class="sort__link-arrow sort__link-arrow--down">
+                  <span class="visually-hidden">Сортировать по убыванию</span>
+                </a>
               </li>
             </ul>
           </div>
           <div class="cards__wrapper">
-            <article class="cards__item card-good">
+            <article class="cards__item card-good" tabindex="0">
               <div class="card-good__wrapper card-good__wrapper--hidden">
-                <a type="button" class="card-good__button card-good__button--buy">Купить</a>
-                <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
+                <a type="button" class="card-good__button card-good__button--buy" tabindex="0">Купить</a>
+                <a type="button" class="card-good__button card-good__button--bookmark" tabindex="0">В закладки</a>
               </div>
               <img src="img/card/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"
                 class="card-good__img">
@@ -234,7 +245,7 @@
               <span class="card-good__price card-good__price--old">30500 Р.</span>
               <span class="card-good__price card-good__price--new">25500 Р.</span>
             </article>
-            <article class="cards__item card-good">
+            <article class="cards__item card-good" tabindex="0">
               <div class="card-good__wrapper card-good__wrapper--hidden">
                 <a type="button" class="card-good__button card-good__button--buy">Купить</a>
                 <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
@@ -245,7 +256,7 @@
               <span class="card-good__price card-good__price--old">30500Р.</span>
               <span class="card-good__price card-good__price--new">25500Р.</span>
             </article>
-            <article class="cards__item card-good">
+            <article class="cards__item card-good" tabindex="0">
               <div class="card-good__wrapper card-good__wrapper--hidden">
                 <a type="button" class="card-good__button card-good__button--buy">Купить</a>
                 <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
@@ -256,7 +267,7 @@
               <span class="card-good__price card-good__price--old">22500 Р.</span>
               <span class="card-good__price card-good__price--new">15500 Р.</span>
             </article>
-            <article class="cards__item card-good card-good--new">
+            <article class="cards__item card-good card-good--new" tabindex="0">
               <div class="card-good__wrapper card-good__wrapper--hidden">
                 <a type="button" class="card-good__button card-good__button--buy">Купить</a>
                 <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
@@ -267,7 +278,7 @@
               <span class="card-good__price card-good__price--old">22500 Р.</span>
               <span class="card-good__price card-good__price--new">15500 Р. </span>
             </article>
-            <article class="cards__item card-good">
+            <article class="cards__item card-good" tabindex="0">
               <div class="card-good__wrapper card-good__wrapper--hidden">
                 <a type="button" class="card-good__button card-good__button--buy">Купить</a>
                 <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
@@ -278,7 +289,7 @@
               <span class="card-good__price card-good__price--old">30500 Р.</span>
               <span class="card-good__price card-good__price--new">25500 Р.</span>
             </article>
-            <article class="cards__item card-good card-good--new">
+            <article class="cards__item card-good card-good--new" tabindex="0">
               <div class="card-good__wrapper card-good__wrapper--hidden">
                 <a type="button" class="card-good__button card-good__button--buy">Купить</a>
                 <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
@@ -289,7 +300,7 @@
               <span class="card-good__price card-good__price--old">22500 Р.</span>
               <span class="card-good__price card-good__price--new">12500 Р.</span>
             </article>
-            <article class="cards__item card-good card-good--new">
+            <article class="cards__item card-good card-good--new" tabindex="0">
               <div class="card-good__wrapper card-good__wrapper--hidden">
                 <a type="button" class="card-good__button card-good__button--buy">Купить</a>
                 <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
@@ -300,7 +311,7 @@
               <span class="card-good__price card-good__price--old">22500 Р.</span>
               <span class="card-good__price card-good__price--new">15500 Р. </span>
             </article>
-            <article class="cards__item card-good">
+            <article class="cards__item card-good" tabindex="0">
               <div class="card-good__wrapper card-good__wrapper--hidden">
                 <a type="button" class="card-good__button card-good__button--buy">Купить</a>
                 <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
@@ -311,7 +322,7 @@
               <span class="card-good__price card-good__price--old">30500 Р.</span>
               <span class="card-good__price card-good__price--new">25500 Р.</span>
             </article>
-            <article class="cards__item card-good card-good--new">
+            <article class="cards__item card-good card-good--new" tabindex="0">
               <div class="card-good__wrapper card-good__wrapper--hidden">
                 <a type="button" class="card-good__button card-good__button--buy">Купить</a>
                 <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
@@ -408,27 +419,20 @@
         <ul class="footer-contacts__list">
           <li class="footer-contacts__item">
             <a href="#" title="Вконтакте" target="_blank" rel="noopener noreferrer"
-              class="footer-contacts__link footer-contacts__link--socials">
-              <svg width="26" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15.54 11.728c.92-.29 2.1 1.913 3.354 2.755.942.639 1.663.501 1.663.501l3.345-.047s1.747-.105.921-1.457c-.068-.112-.484-1.002-2.489-2.833-2.096-1.915-1.812-1.605.712-4.916 1.538-2.019 2.153-3.251 1.96-3.776-.185-.506-1.314-.374-1.314-.374l-3.768.025c-.367 0-.678.111-.82.483-.003.003-.598 1.562-1.391 2.886-1.677 2.802-2.346 2.952-2.623 2.776-.637-.406-.476-1.628-.476-2.497 0-2.716.416-3.849-.815-4.141-.411-.098-.711-.161-1.76-.17-1.34-.02-2.479 0-3.124.308-.428.209-.757.667-.557.693.25.033.811.15 1.112.55.386.517.374 1.677.374 1.677s.22 3.198-.52 3.594c-.508.272-1.203-.283-2.699-2.827-.763-1.301-1.34-2.74-1.34-2.74s-.112-.267-.314-.413c-.24-.173-.578-.229-.578-.229L.817 1.58s-.538.015-.735.245c-.175.205-.015.627-.015.627s2.802 6.45 5.974 9.7c2.908 2.983 6.213 2.785 6.213 2.785h1.497s.452-.05.683-.292c.216-.225.206-.648.206-.648s-.03-1.977.9-2.268z"
-                  fill="#fff" /></svg>
+              class="footer-contacts__link footer-contacts__link--socials footer-contacts__link--vk">
+              <span class="visually-hidden">Ссылка на страницу компании в социальной сети "В Контакте"</span>
             </a>
           </li>
           <li class="footer-contacts__item">
             <a href="#" title="Facebook" target="_blank" rel="noopener noreferrer"
-              class="footer-contacts__link footer-contacts__link--socials">
-              <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff" /></svg>
+              class="footer-contacts__link footer-contacts__link--socials footer-contacts__link--facebook">
+              <span class="visually-hidden">Ссылка на страницу компании в социальной сети "Facebook"</span>
             </a>
           </li>
           <li class="footer-contacts__item">
             <a href="#" title="Instagram" target="_blank" rel="noopener noreferrer"
-              class="footer-contacts__link footer-contacts__link--socials">
-              <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M3 0h15c1.65 0 3 1.35 3 3v15c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm11 10.5C14 8.57 12.43 7 10.5 7S7 8.57 7 10.5 8.57 14 10.5 14s3.5-1.57 3.5-3.5zM3 18V9h1.181c-.118.491-.18.995-.181 1.5a6.5 6.5 0 1013 0 6.451 6.451 0 00-.181-1.5H18v9H3zM14 7h4V3h-4v4z"
-                  fill="#fff" /></svg>
+              class="footer-contacts__link footer-contacts__link--socials footer-contacts__link--insta">
+              <span class="visually-hidden">Ссылка на страницу компании в социальной сети "Instagram"</span>
             </a>
           </li>
         </ul>
@@ -453,7 +457,9 @@
       <a href="#" class="modal-window__btn modal-window__btn--order btn-primary">Оформить заказ</a>
       <a href="#" class="modal-window__btn modal-window__btn--continue btn-primary">Продолжить покупки</a>
     </div>
-    <button type="button" class="modal-window__close"></button>
+    <button type="button" class="modal-window__close">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </section>
 </body>
 

@@ -31,7 +31,10 @@
   border: none;
   outline: none;
 
+  color: var(--white);
+
   &:focus {
+    color: var(--black);
     background-color: var(--white);
   }
 
@@ -45,7 +48,8 @@
   fill-opacity: 0.5;
 }
 
-.search__field:focus + .search__btn path {
+.search__field:focus + .search__btn path,
+.search__btn:focus path {
   fill: var(--basic-red);
   fill-opacity: 1;
 }

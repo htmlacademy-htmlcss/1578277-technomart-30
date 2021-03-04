@@ -26,19 +26,16 @@
     color: var(--basic-red);
   }
 
-  &:active {
-    color: var(--greylight);
-  }
-
+  &:active,
   &:focus {
-   color: aqua;
+    outline: none;
+    color: var(--greylight);
   }
 }
 
 .user-menu__link:hover path {
   fill: var(--basic-grey);
 }
-
 
 .user-menu__link:active path {
   fill: var(--greylight);

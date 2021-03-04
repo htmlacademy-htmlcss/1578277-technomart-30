@@ -29,13 +29,17 @@
   &--current {
     color: var(--white);
     background-color: var(--basic-red);
+    border-color: var(--basic-red);
+    ;
   }
 
-  &:hover {
+  &:hover:not(.pagination__link--current) {
     border: 1px solid var(--greylight);
   }
 
-  &:active {
+  &:active:not(.pagination__link--current),
+  &:focus:not(.pagination__link--current) {
+    outline: none;
     border: 1px solid var(--basic-red);
   }
 }

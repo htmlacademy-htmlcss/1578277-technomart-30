@@ -79,7 +79,9 @@
     background: var(--greylight03);
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     background: var(--basic-greylight03);
   }
 }

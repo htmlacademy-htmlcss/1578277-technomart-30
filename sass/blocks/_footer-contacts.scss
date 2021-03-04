@@ -38,6 +38,18 @@
 .footer-contacts__link {
   color: var(--special-yellowlight);
 
+  &--vk {
+    background-image: url("../img/icon/vkontakte.svg");
+  }
+
+  &--facebook {
+    background-image: url("../img/icon/facebook.svg");
+  }
+
+  &--insta {
+    background-image: url("../img/icon/instagram.svg");
+  }
+
   &:hover {
     border-bottom: 1px solid var(--special-yellowlight);
   }
@@ -45,6 +57,10 @@
   &:active {
     color: var(--basic-red);
     border: none;
+  }
+
+  &:focus {
+    outline: 1px dotted var(--special-yellowlight);
   }
 
   &--socials {
@@ -55,13 +71,21 @@
     width: 44px;
     height: 44px;
 
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: var(--dark);
     border-radius: 50%;
+
+
 
     &:hover,
     &:active {
       background-color: var(--basic-red);
       border: none;
+    }
+
+    &:focus {
+      outline: 1px dotted var(--basic-red);
     }
   }
 }

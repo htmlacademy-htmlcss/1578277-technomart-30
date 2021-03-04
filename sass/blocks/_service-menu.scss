@@ -22,7 +22,6 @@
 
 .service-menu__item {
   flex-wrap: wrap;
-
 }
 
 .service-menu__link {
@@ -35,7 +34,9 @@
     background-color: var(--basic-dark);
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     color: var(--basic-darkblue);
     background-color: var(--white);
   }

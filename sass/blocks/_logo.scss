@@ -15,7 +15,9 @@
     margin-bottom: 27px;
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     background-color: var(--error);
     box-shadow: 0 5px 0 var(--black-opacity24),
       0 5px 0 var(--error);
