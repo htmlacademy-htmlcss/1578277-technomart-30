@@ -70,7 +70,8 @@
   color: var(--greylight);
 }
 
-.user__link:hover .user__svg path {
+.user__link:hover .user__svg path,
+.user__link--exit:focus .user__svg--exit path {
   fill: var(--basic-grey);
 }
 

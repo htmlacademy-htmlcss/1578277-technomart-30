@@ -91,6 +91,11 @@
   &::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }
+
+  &:hover,
+  &:focus {
+    outline: 1px dotted var(--range-green);
+  }
 }
 
 .range__price-controls {

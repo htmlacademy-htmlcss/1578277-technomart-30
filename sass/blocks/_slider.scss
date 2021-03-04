@@ -26,6 +26,7 @@
 }
 
 .slider__container {
+  position: relative;
   display: grid;
   grid-template-rows: 104px 1fr 104px;
   grid-template-columns: repeat(8, 1fr);
@@ -45,8 +46,10 @@
 }
 
 .slider__button {
+  position: absolute;
+
   min-height: 40px;
-  margin-top: 15px;
+  width: 22px;
 
   background-color: Transparent;
   background-image: url("../img/icon/slider-button.png");
@@ -56,13 +59,18 @@
   cursor: pointer;
 
   &--prev {
-    grid-area: 2/1/3/2;
+    left: 23px;
+    top: 120px;
+
     z-index: 1;
     background-position: 47% bottom;
   }
 
   &--next {
-    grid-area: 2/8/3/9;
+    right: 23px;
+    bottom: 105px;
+
+
     z-index: 1;
 
     transform: rotate(180deg);
@@ -88,7 +96,9 @@
 }
 
 .slider__list-dot {
-  grid-area: 3/5/4/6;
+  position: absolute;
+  top: 60%;
+  left: 309px;
   z-index: 1;
 
   display: inline-flex;
@@ -116,5 +126,12 @@
 
   &:first-child {
     margin-left: -13px;
+  }
+
+  &:focus {
+    width: 12px;
+    height: 12px;
+
+    outline: none;
   }
 }

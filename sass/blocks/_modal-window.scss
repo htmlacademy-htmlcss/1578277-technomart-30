@@ -62,13 +62,17 @@
   background-color: transparent;
   background-image: url("../img/icon/modal-close.svg");
 
+  border: none;
+  outline: none;
+
   cursor: pointer;
 
   &:hover {
     opacity: 0.5;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     opacity: 0.15;
   }
 }

@@ -16,17 +16,19 @@
   <header class="page-header">
       <div class="page-header__menu menu">
         <div class="page-header__container container"   >
-          <a href="#" class="menu__link logo">
-            <img src="img/logo.svg" width="108" height="17" alt="Логотип компании Техномарт"
-              class="logo__img">
+          <a href="index.html" class="menu__link logo">
+            <img src="img/logo.svg" width="108" height="17" alt="Логотип компании Техномарт" class="logo__img">
           </a>
           <form class="menu__search search">
-            <input type="text" placeholder="Поиск:" class="search__field">
-            <button type="submit" class="search__btn">
-              <svg class="search__svg" width=" 17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <label class="visually-hidden" for="search">Поле ввода поискового запроса</label>
+            <input type="text" id="search" placeholder="Поиск:" class="search__field">
+            <button type="submit" class="search__btn" tabindex="0">
+              <svg class="search__svg" aria-hidden="true" width=" 17" height="17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z"
                   fill="#fff" /></svg>
+              <span class="visually-hidden">Кнопка поиска</span>
             </button>
           </form>
           <ul class="menu__list checkout">
@@ -127,13 +129,21 @@
                 <span class="slider__desc slider__desc--large">Дрели</span><br>
                 <span class="slider__desc">Соседям на радость!</span>
               </p>
-              <button class="slider__button slider__button--prev" type="button" aria-label="Предыдущий слайд"></button>
-              <button class="slider__button slider__button--next" type="button" aria-label="Следующий слайд"
-                 disabled></button>
+              <button class="slider__button slider__button--prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+              </button>
+              <button class="slider__button slider__button--next" type="button"
+                 disabled>
+                <span class="visually-hidden">Следующий слайд</span>
+              </button>
               <a class="slider__link btn-primary" href="catalog.html">Открыть каталог</a>
               <ul class="slider__list-dot">
-                <li class="slider__dot slider__dot--current"></li>
-                <li class="slider__dot"></li>
+                <li class="slider__dot slider__dot--current" tabindex="0">
+                   <span class="visually-hidden">Текущий слайд</span>
+                </li>
+                <li class="slider__dot" tabindex="0">
+                  <span class="visually-hidden">Следующий слайд</span>
+                </li>
               </ul>
             </div>
             <div class="slider__container slider__container--current">
@@ -143,13 +153,21 @@
                 <span class="slider__desc slider__desc--large">Перфораторы</span><br>
                 <span class="slider__desc">Настоящие мужские игрушки</span>
               </p>
-              <button class="slider__button slider__button--prev" type="button" aria-label="Предыдущий слайд"></button>
-              <button class="slider__button slider__button--next" type="button" aria-label="Следующий слайд"
-                disabled></button>
+              <button class="slider__button slider__button--prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+              </button>
+              <button class="slider__button slider__button--next" type="button"
+                disabled>
+                <span class="visually-hidden">Следующий слайд</span>
+              </button>
               <a class="slider__link btn-primary" href="catalog.html">Открыть каталог</a>
               <ul class="slider__list-dot">
-                <li class="slider__dot"></li>
-                <li class="slider__dot slider__dot--current"></li>
+                <li class="slider__dot" tabindex="0">
+                   <span class="visually-hidden">Предыдущий слайд</span>
+                </li>
+                <li class="slider__dot slider__dot--current" tabindex="0">
+                   <span class="visually-hidden">Текущий слайд</span>
+                </li>
               </ul>
             </div>
           </div>
