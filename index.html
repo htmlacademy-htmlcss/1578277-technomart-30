@@ -448,17 +448,29 @@
      <span class="visually-hidden">Закрыть</span>
    </button>
   </section>
- <section class="modal-window modal-window--map">
-    <h2 class="visually-hidden">Местоположение компании на карте</h2>
-    <img src="img/modal-map.jpg" alt="Офис компании по адресу город Санкт-Петербург, улица Большая Конюшенная, дом 19/8"
-      class="modal-window__img">
-    <button type="button" class="modal-window__close">
+  <section class="modal-window modal-window--map">
+      <h2 class="visually-hidden">Местоположение компании на карте</h2>
+      <img src="img/modal-map.jpg" alt="Офис компании по адресу город Санкт-Петербург, улица Большая Конюшенная, дом 19/8"
+        class="modal-window__img">
+      <button type="button" class="modal-window__close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+  </section>
+  <section class="modal-window modal-window--cart">
+    <h2 class="visually-hidden">Информация о добавлении товара в корзину</h2>
+    <p class="modal-window__text">Товар добавлен в корзину!</p>
+    <div class="modal-window__wrap modal-window__wrap--cart">
+      <a href="#" class="modal-window__btn modal-window__btn--order btn-primary">Оформить заказ</a>
+      <a href="#" class="modal-window__btn modal-window__btn--continue btn-primary js--close">Продолжить покупки</a>
+    </div>
+    <button type="button" class="modal-window__close js--close">
       <span class="visually-hidden">Закрыть</span>
     </button>
-</section>
+  </section>
 
 <script src="js/feedback.js"></script>
 <script src="js/map.js"></script>
+<script src="js/cart.js"></script>
 <script src="js/slider"></script>
 
 </body>
