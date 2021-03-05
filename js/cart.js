@@ -1,8 +1,11 @@
-const cartLink = document.querySelectorAll(".card-good__button--buy");
+const cartLinks = document.querySelectorAll(".card-good__button--buy");
 const cartPopup = document.querySelector(".modal-window--cart");
 const cartClose = cartPopup.querySelector(".modal-window__close");
 
-cartLink.addEventListener("click", function (evt) {
+
+
+for (let cartLink of cartLinks) {
+  cartLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   cartPopup.classList.add("modal-window--show");
 });
@@ -20,3 +23,4 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+};
