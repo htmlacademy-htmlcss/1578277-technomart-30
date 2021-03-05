@@ -22,7 +22,7 @@
         <form class="menu__search search">
           <label class="visually-hidden" for="search">Поле ввода поискового запроса</label>
           <input type="text" id="search" placeholder="Поиск:" class="search__field">
-          <button type="submit" class="search__btn" tabindex="0">
+          <button type="submit" class="search__btn">
             <svg class="search__svg" aria-hidden="true" width=" 17" height="17" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -36,7 +36,7 @@
             <a href="#" class="checkout__link checkout__link--bookmark">Закладки: 0</a>
           </li>
           <li class="checkout__item">
-            <a href="#" class="checkout__link checkout__link--cart-catalog checkout__link--cart">Корзина: 10</a>
+            <a href="#" class="checkout__link checkout__link--cart-add checkout__link--cart">Корзина: 10</a>
           </li>
           <li class="checkout__item">
             <a href="#" class="checkout__link checkout__link--order">Оформить заказ</a>
@@ -66,7 +66,7 @@
               <span class="visually-hidden">Страница пользователя</span>
               <p class="user__text">Равшан Джамшутович</p>
             </a>
-            <a href="#" class="user__link user__link--exit" tabindex="0">
+            <a href="#" class="user__link user__link--exit">
               <svg class="user__svg user__svg--exit" aria-hidden="true" width="20" height="17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5" />
@@ -139,7 +139,7 @@
           </div>
           <form class="filter__form" action="https://echo.htmlacademy.ru/courses" method="get" target="_blank">
             <fieldset class="filter__range range">
-              <legend class="range__title" aria-label="Выбор ценового диапазона">Цена:</legend>
+              <legend class="range__title">Цена:</legend>
               <div class="range__results">
                 <div class="range__controls">
                   <div class="range__scale">
@@ -202,7 +202,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button type="submit" class="filter__btn" tabindex="0">Показать</button>
+            <button type="submit" class="filter__btn">Показать</button>
           </form>
         </section>
         <section class="catalog__cards cards">
@@ -234,104 +234,109 @@
             </ul>
           </div>
           <div class="cards__wrapper">
-            <article class="cards__item card-good" tabindex="0">
-              <div class="card-good__wrapper card-good__wrapper--hidden">
-                <a type="button" class="card-good__button card-good__button--buy" tabindex="0">Купить</a>
-                <a type="button" class="card-good__button card-good__button--bookmark" tabindex="0">В закладки</a>
+            <article class="popular-goods__card card-good" tabindex="0">
+              <div class="card-good__wrapper">
+                <a href="#" class="card-good__button card-good__button--buy">Купить</a>
+                <a href="#" class="card-good__button card-good__button--bookmark">В закладки</a>
               </div>
               <img src="img/card/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"
                 class="card-good__img">
               <h3 class="card-good__title">Перфоратор BOSCH BFG 6000</h3>
               <span class="card-good__price card-good__price--old">30500 Р.</span>
-              <span class="card-good__price card-good__price--new">25500 Р.</span>
+              <span class="card-good__price card-good__price--new">25500 Р. </span>
             </article>
-            <article class="cards__item card-good" tabindex="0">
-              <div class="card-good__wrapper card-good__wrapper--hidden">
-                <a type="button" class="card-good__button card-good__button--buy">Купить</a>
-                <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
+            <article class="popular-goods__card card-good" tabindex="0">
+              <div class="card-good__wrapper">
+                <a href="#" class="card-good__button card-good__button--buy">Купить</a>
+                <a href="#" class="card-good__button card-good__button--bookmark">В закладки</a>
               </div>
               <img src="img/card/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"
                 class="card-good__img">
               <h3 class="card-good__title">Перфоратор BOSCH BFG 6000</h3>
-              <span class="card-good__price card-good__price--old">30500Р.</span>
-              <span class="card-good__price card-good__price--new">25500Р.</span>
+              <span class="card-good__price card-good__price--old">30500 Р.</span>
+              <span class="card-good__price card-good__price--new">25500 Р. </span>
             </article>
-            <article class="cards__item card-good" tabindex="0">
-              <div class="card-good__wrapper card-good__wrapper--hidden">
-                <a type="button" class="card-good__button card-good__button--buy">Купить</a>
-                <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
+            <article class="popular-goods__card card-good card-good--new" tabindex="0">
+              <div class="card-good__wrapper">
+                <a href="#" class="card-good__button card-good__button--buy">Купить</a>
+                <a href="#" class="card-good__button card-good__button--bookmark">В закладки</a>
               </div>
               <img src="img/card/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"
                 class="card-good__img">
               <h3 class="card-good__title">Перфоратор BOSCH BFG 3000</h3>
               <span class="card-good__price card-good__price--old">22500 Р.</span>
               <span class="card-good__price card-good__price--new">15500 Р.</span>
+              <span class="card-good__new">New</span>
             </article>
-            <article class="cards__item card-good card-good--new" tabindex="0">
-              <div class="card-good__wrapper card-good__wrapper--hidden">
-                <a type="button" class="card-good__button card-good__button--buy">Купить</a>
-                <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
+            <article class="popular-goods__card card-good card-good--new" tabindex="0">
+              <div class="card-good__wrapper">
+                <a href="#" class="card-good__button card-good__button--buy">Купить</a>
+                <a href="#" class="card-good__button card-good__button--bookmark">В закладки</a>
               </div>
               <img src="img/card/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"
                 class="card-good__img">
               <h3 class="card-good__title">Перфоратор BOSCH BFG 3000</h3>
               <span class="card-good__price card-good__price--old">22500 Р.</span>
-              <span class="card-good__price card-good__price--new">15500 Р. </span>
+              <span class="card-good__price card-good__price--new">15500 Р.</span>
+              <span class="card-good__new">New</span>
             </article>
-            <article class="cards__item card-good" tabindex="0">
-              <div class="card-good__wrapper card-good__wrapper--hidden">
-                <a type="button" class="card-good__button card-good__button--buy">Купить</a>
-                <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
+            <article class="popular-goods__card card-good" tabindex="0">
+              <div class="card-good__wrapper">
+                <a href="#" class="card-good__button card-good__button--buy">Купить</a>
+                <a href="#" class="card-good__button card-good__button--bookmark">В закладки</a>
               </div>
               <img src="img/card/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"
                 class="card-good__img">
               <h3 class="card-good__title">Перфоратор BOSCH BFG 6000</h3>
               <span class="card-good__price card-good__price--old">30500 Р.</span>
-              <span class="card-good__price card-good__price--new">25500 Р.</span>
+              <span class="card-good__price card-good__price--new">25500 Р. </span>
             </article>
-            <article class="cards__item card-good card-good--new" tabindex="0">
-              <div class="card-good__wrapper card-good__wrapper--hidden">
-                <a type="button" class="card-good__button card-good__button--buy">Купить</a>
-                <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
+            <article class="popular-goods__card card-good card-good--new" tabindex="0">
+              <div class="card-good__wrapper">
+                <a href="#" class="card-good__button card-good__button--buy">Купить</a>
+                <a href="#" class="card-good__button card-good__button--bookmark">В закладки</a>
               </div>
               <img src="img/card/bosch2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"
                 class="card-good__img">
               <h3 class="card-good__title"> Перфоратор BOSCH BFG 2000 </h3>
               <span class="card-good__price card-good__price--old">22500 Р.</span>
               <span class="card-good__price card-good__price--new">12500 Р.</span>
+              <span class="card-good__new">New</span>
             </article>
-            <article class="cards__item card-good card-good--new" tabindex="0">
-              <div class="card-good__wrapper card-good__wrapper--hidden">
-                <a type="button" class="card-good__button card-good__button--buy">Купить</a>
-                <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
+            <article class="popular-goods__card card-good card-good--new" tabindex="0">
+              <div class="card-good__wrapper">
+                <a href="#" class="card-good__button card-good__button--buy">Купить</a>
+                <a href="#" class="card-good__button card-good__button--bookmark">В закладки</a>
               </div>
               <img src="img/card/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"
                 class="card-good__img">
               <h3 class="card-good__title">Перфоратор BOSCH BFG 3000</h3>
               <span class="card-good__price card-good__price--old">22500 Р.</span>
-              <span class="card-good__price card-good__price--new">15500 Р. </span>
+              <span class="card-good__price card-good__price--new">15500 Р.</span>
+              <span class="card-good__new">New</span>
             </article>
-            <article class="cards__item card-good" tabindex="0">
-              <div class="card-good__wrapper card-good__wrapper--hidden">
-                <a type="button" class="card-good__button card-good__button--buy">Купить</a>
-                <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
+            <article class="popular-goods__card card-good" tabindex="0">
+              <div class="card-good__wrapper">
+                <a href="#" class="card-good__button card-good__button--buy">Купить</a>
+                <a href="#" class="card-good__button card-good__button--bookmark">В закладки</a>
               </div>
               <img src="img/card/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"
                 class="card-good__img">
               <h3 class="card-good__title">Перфоратор BOSCH BFG 6000</h3>
               <span class="card-good__price card-good__price--old">30500 Р.</span>
-              <span class="card-good__price card-good__price--new">25500 Р.</span>
+              <span class="card-good__price card-good__price--new">25500 Р. </span>
             </article>
-            <article class="cards__item card-good card-good--new" tabindex="0">
-              <div class="card-good__wrapper card-good__wrapper--hidden">
-                <a type="button" class="card-good__button card-good__button--buy">Купить</a>
-                <a type="button" class="card-good__button card-good__button--bookmark">В закладки</a>
+            <article class="popular-goods__card card-good card-good--new" tabindex="0">
+              <div class="card-good__wrapper">
+                <a href="#" class="card-good__button card-good__button--buy">Купить</a>
+                <a href="#" class="card-good__button card-good__button--bookmark">В закладки</a>
               </div>
               <img src="img/card/bosch2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"
                 class="card-good__img">
               <h3 class="card-good__title"> Перфоратор BOSCH BFG 2000 </h3>
               <span class="card-good__price card-good__price--old">22500 Р.</span>
               <span class="card-good__price card-good__price--new">12500 Р.</span>
+              <span class="card-good__new">New</span>
             </article>
           </div>
           <div class="cards__box pagination">
@@ -450,7 +455,7 @@
       </div>
     </div>
   </footer>
-  <section class="modal-window modal-window--hidden">
+  <section class="modal-window modal-window--cart">
     <h2 class="visually-hidden">Информация о добавлении товара в корзину</h2>
     <p class="modal-window__text">Товар добавлен в корзину!</p>
     <div class="modal-window__wrap modal-window__wrap--cart">
@@ -461,6 +466,8 @@
       <span class="visually-hidden">Закрыть</span>
     </button>
   </section>
+
+<script src="js/cart.js"></script>
 </body>
 
 </html>

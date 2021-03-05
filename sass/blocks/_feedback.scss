@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 41px 80px 37px 80px;
+  padding: 41px 80px 0 80px;
 }
 
 .feedback__wrapper {
@@ -19,6 +19,7 @@
   }
 
   &--text {
+    margin-bottom: 37px;
     width: 460px;
   }
 }
@@ -41,6 +42,9 @@
     height: 114px;
 
     resize: none;
+  }
+  &:focus {
+    outline: 1px dotted var(--greylight);
   }
 
   &::placeholder {
