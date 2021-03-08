@@ -43,8 +43,10 @@
 
     resize: none;
   }
+
   &:focus {
-    outline: 1px dotted var(--greylight);
+    outline: none;
+    border: 2px solid var(--basic-grey);
   }
 
   &::placeholder {

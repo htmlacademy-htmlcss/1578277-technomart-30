@@ -1,12 +1,10 @@
 .modal-window {
   position: fixed;
-  top: 40%;
-  right: 0;
-  bottom: auto;
-  left: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 
   display: none;
-  margin: auto;
   width: 620px;
   z-index: 1;
 
@@ -120,7 +118,7 @@
   }
 }
 
-@keyframes bounce {
+/* @keyframes bounce {
   0% {
     transform: translateY(-2000px);
   }
@@ -158,4 +156,4 @@
   80% {
     transform: translateX(10px);
   }
-}
+} */

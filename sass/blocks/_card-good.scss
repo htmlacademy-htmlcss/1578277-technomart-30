@@ -202,7 +202,6 @@
     background-color: var(--basic-red);
     background-size: 50% 50%;
     background-repeat: no-repeat;
-
     border-radius: 5px 0 0 5px;
 
   &::after {
@@ -210,8 +209,10 @@
     position: absolute;
     top: 0;
     left: 122px;
+
     width: 19px;
     height: 38px;
+
     border-top: 19px solid transparent;
     border-left: 19px solid var(--basic-red);
     border-bottom: 19px solid transparent;

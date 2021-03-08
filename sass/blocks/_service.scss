@@ -50,25 +50,25 @@
 }
 
 .service__desc {
+  display: none;
   min-height: 283px;
 
   background-position: right 20px;
   background-repeat: no-repeat;
 
+  &--active {
+    display: block;
+  }
 
   &--delivery {
     background-image: url("../img/service/delivery.png ");
   }
 
   &--guarantee {
-    display: none;
-
     background-image: url("../img/service/guarantee.png");
   }
 
   &--credit {
-    display: none;
-
     background-image: url("../img/service/credit.png");
   }
 }

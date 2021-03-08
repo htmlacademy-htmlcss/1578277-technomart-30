@@ -662,8 +662,8 @@ img {
 }
 
 .checkout__link--cart-add {
-  background-color: var(--basic-red);
   padding-right: 21px;
+  background-color: var(--basic-red);
 }
 
 .checkout__link--order {
@@ -892,7 +892,8 @@ img {
 }
 
 .feedback__item:focus {
-  outline: 1px dotted var(--greylight);
+  outline: none;
+  border: 2px solid var(--basic-grey);
 }
 
 .feedback__item::-webkit-input-placeholder {
@@ -1326,12 +1327,11 @@ img {
 
 .modal-window {
   position: fixed;
-  top: 40%;
-  right: 0;
-  bottom: auto;
-  left: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: none;
-  margin: auto;
   width: 620px;
   z-index: 1;
   background-color: var(--white);
@@ -1438,90 +1438,45 @@ img {
   opacity: 0.5;
 }
 
-@-webkit-keyframes bounce {
+/* @keyframes bounce {
   0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
+    transform: translateY(-2000px);
   }
-  70% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-  90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
 
-@keyframes bounce {
-  0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
-  }
   70% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
   }
-  90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
 
-@-webkit-keyframes shake {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  10%,
-  30%,
-  50%,
-  70%,
   90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateY(-10px);
   }
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+
+  100% {
+    transform: translateY(0);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
+
   10%,
   30%,
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px);
   }
+
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
-}
-
+} */
 .nav {
   max-width: 940px;
   background-color: var(--basic-darkblue);
@@ -2101,9 +2056,14 @@ img {
 }
 
 .service__desc {
+  display: none;
   min-height: 283px;
   background-position: right 20px;
   background-repeat: no-repeat;
+}
+
+.service__desc--active {
+  display: block;
 }
 
 .service__desc--delivery {
@@ -2111,12 +2071,10 @@ img {
 }
 
 .service__desc--guarantee {
-  display: none;
   background-image: url("../img/service/guarantee.png");
 }
 
 .service__desc--credit {
-  display: none;
   background-image: url("../img/service/credit.png");
 }
 
@@ -2130,8 +2088,7 @@ img {
 }
 
 .slider__container {
-  display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-rows: 104px 1fr 104px;
       grid-template-rows: 104px 1fr 104px;
   -ms-grid-columns: (1fr)[8];
@@ -2139,8 +2096,9 @@ img {
   background-color: var(--basic-greylight);
 }
 
-.slider__container--hidden {
-  display: none;
+.slider__container--active {
+  display: -ms-grid;
+  display: grid;
 }
 
 .slider__description {
@@ -2262,53 +2220,6 @@ img {
   width: 12px;
   height: 12px;
   outline: none;
-}
-
-/* fade */
-.fade {
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 300ms;
-          animation-duration: 300ms;
-}
-
-.fade-in {
-  -webkit-animation-name: fade-in;
-          animation-name: fade-in;
-}
-
-.fade-out {
-  -webkit-animation-name: fade-in;
-          animation-name: fade-in;
-}
-
-/* keyframes */
-@-webkit-keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0;
-  }
 }
 
 .sort {
