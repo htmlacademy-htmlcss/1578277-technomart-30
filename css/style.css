@@ -2204,6 +2204,7 @@ img {
   height: 10px;
   background: var(--white);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .slider__dot--current {

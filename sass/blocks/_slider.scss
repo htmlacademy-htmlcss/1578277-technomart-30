@@ -118,6 +118,8 @@
   background: var(--white);
   border-radius: 50%;
 
+  cursor: pointer;
+
   &--current {
     background: var(--basic-red);
     border: 2px solid var(--white);
