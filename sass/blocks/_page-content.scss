@@ -6,9 +6,10 @@
 
 .page-content__title {
   margin: 0;
-  padding: 29px 29px 30px 29px;
+  padding: 28px 29px 30px 29px;
 
   font-size: 30px;
+  font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-darkblue);
@@ -16,15 +17,15 @@
   &--article {
     padding: 0;
     margin-right: 582px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 
     color: var(--black);
   }
 }
 
 .page-content__container {
-  padding-top: 64px;
-  padding-bottom: 68px;
+  padding-top: 61px;
+  padding-bottom: 70px;
 }
 
 .page-content__article {

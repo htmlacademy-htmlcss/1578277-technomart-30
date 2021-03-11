@@ -1,7 +1,6 @@
 .checkout {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
-  align-items: center;
   max-width: 450px;
   padding: 0;
   margin: 0;
@@ -11,7 +10,7 @@
 
 .checkout__link {
   position: relative;
-  padding: 9px 38px 9px 43px;
+  padding: 10px 38px 9px 43px;
 
   color: var(--white);
 

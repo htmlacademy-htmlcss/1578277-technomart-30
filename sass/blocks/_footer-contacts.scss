@@ -28,10 +28,12 @@
 }
 
 .footer-contacts__item {
-  padding-right: 4px;
+  max-width: 42px;
+  max-height: 42px;
+  margin-right: 2px;
 
   &:last-child {
-    padding-right: 0;
+    margin-right: 0;
   }
 }
 
@@ -68,8 +70,8 @@
     align-items: center;
     justify-content: center;
 
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
 
     background-repeat: no-repeat;
     background-position: center;
