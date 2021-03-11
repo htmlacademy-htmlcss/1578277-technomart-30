@@ -31,14 +31,14 @@ const menuDel = document.querySelector('.service-menu__link--del'),
 let index = 0;
 
 const activeSlide = (n) => {
-  for (slide of slides) {
+  for (const slide of slides) {
     slide.classList.remove('slider__container--active');
   }
   slides[n].classList.add('slider__container--active');
 };
 
 const activeDot = (n) => {
-  for (dot of dots) {
+  for (const dot of dots) {
     dot.classList.remove('slider__dot--current');
   }
   dots[n].classList.add('slider__dot--current');
@@ -186,18 +186,57 @@ menuDel.addEventListener('click', function (evt) {
     descDel.classList.add('service__desc--active');
     descGuar.classList.remove('service__desc--active');
     descCred.classList.remove('service__desc--active');
- });
+    menuDel.classList.add('service-menu__link--focus');
+    menuGuar.classList.remove('service-menu__link--focus');
+    menuCred.classList.remove('service-menu__link--focus');
+});
 
 menuGuar.addEventListener('click', function (evt) {
     evt.preventDefault();
     descGuar.classList.add('service__desc--active');
     descDel.classList.remove('service__desc--active');
     descCred.classList.remove('service__desc--active');
- });
+    menuGuar.classList.add('service-menu__link--focus');
+    menuDel.classList.remove('service-menu__link--focus');
+    menuCred.classList.remove('service-menu__link--focus');
+});
 
 menuCred.addEventListener('click', function (evt) {
     evt.preventDefault();
     descCred.classList.add('service__desc--active');
     descDel.classList.remove('service__desc--active');
     descGuar.classList.remove('service__desc--active');
+    menuCred.classList.add('service-menu__link--focus');
+    menuDel.classList.remove('service-menu__link--focus');
+    menuGuar.classList.remove('service-menu__link--focus');
+});
+
+menuDel.addEventListener('focus', function (evt) {
+    evt.preventDefault();
+    descDel.classList.add('service__desc--active');
+    descGuar.classList.remove('service__desc--active');
+    descCred.classList.remove('service__desc--active');
+    menuDel.classList.add('service-menu__link--focus');
+    menuGuar.classList.remove('service-menu__link--focus');
+    menuCred.classList.remove('service-menu__link--focus');
+ });
+
+menuGuar.addEventListener('focus', function (evt) {
+    evt.preventDefault();
+    descGuar.classList.add('service__desc--active');
+    descDel.classList.remove('service__desc--active');
+    descCred.classList.remove('service__desc--active');
+    menuGuar.classList.add('service-menu__link--focus');
+    menuDel.classList.remove('service-menu__link--focus');
+    menuCred.classList.remove('service-menu__link--focus');
+ });
+
+menuCred.addEventListener('focus', function (evt) {
+    evt.preventDefault();
+    descCred.classList.add('service__desc--active');
+    descDel.classList.remove('service__desc--active');
+    descGuar.classList.remove('service__desc--active');
+    menuCred.classList.add('service-menu__link--focus');
+    menuDel.classList.remove('service-menu__link--focus');
+    menuGuar.classList.remove('service-menu__link--focus');
  });

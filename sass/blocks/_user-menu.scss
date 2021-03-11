@@ -1,6 +1,8 @@
 .user-menu {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  row-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  max-width: 280px;
 
   margin-top: 5px;
 }
@@ -15,6 +17,8 @@
   cursor: pointer;
 
   &--login {
+    display: inline-flex;
+    align-items: center;
     padding: 12px 27px 12px 19px;
   }
 
@@ -40,4 +44,9 @@
 
 .user-menu__link:active path {
   fill: var(--greylight);
+}
+
+.user-menu__svg {
+  display: flex;
+  margin-right: 6px;
 }

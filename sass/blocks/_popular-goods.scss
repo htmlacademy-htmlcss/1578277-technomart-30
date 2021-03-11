@@ -3,7 +3,7 @@
 }
 
 .popular-goods__header {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding: 25px 14px 26px 28px;
@@ -13,7 +13,7 @@
 }
 
 .popular-goods__title {
-  margin: 0 442px 0 0;
+  margin: 0 auto 0 0;
 
   font-weight: normal;
   font-size: 30px;

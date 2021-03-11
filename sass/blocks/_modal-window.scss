@@ -2,7 +2,7 @@
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 
   display: none;
   width: 620px;
@@ -50,7 +50,7 @@
 
 .modal-window__img {
   display: block;
-  max-width: 943px;
+  max-width: 949px;
   object-fit: contain;
 }
 
@@ -81,15 +81,14 @@
 }
 
 .modal-window__wrap {
-  display: flex;
-  padding: 37px 80px;
+display: inline-flex;
+padding: 37px 80px;
 
-  background-color: var(--special-beige);
+ background-color: var(--special-beige);
 
-  &--cart {
-    padding: 36px 113px;
+  padding: 36px 113px;
   }
-}
+
 
 .modal-window__btn {
   padding: 10px 199px;
@@ -118,28 +117,28 @@
   }
 }
 
-/* @keyframes bounce {
+@keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translate(-50%, -2000px);
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translate(-50%, 30px);
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translate(-50%, -10px);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translate(-50%, -50%);
   }
 
   10%,
@@ -147,13 +146,13 @@
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translate(calc(-50% - 10px), -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translate(calc(-50% + 10px), -50%);
   }
-} */
+}

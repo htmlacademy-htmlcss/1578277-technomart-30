@@ -1,13 +1,14 @@
 .nav-list {
   display: flex;
   flex-wrap: wrap;
-
-  list-style: none;
+  max-width: 546px;
   padding-top: 5px;
   padding-left: 0;
 
+  list-style: none;
+
   &--white {
-    margin: 37px 0 0;
+    margin: 34px 0 0;
   }
 
   &--yellow {

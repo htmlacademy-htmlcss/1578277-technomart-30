@@ -4,7 +4,7 @@
 }
 
 .service__wrapper {
-  padding-top: 64px;
+  padding-top: 65px;
 }
 
 .service__title {
@@ -23,6 +23,7 @@
 }
 
 .service__text {
+  max-width: 300px;
   margin: 0;
 
   font-size: 13px;
