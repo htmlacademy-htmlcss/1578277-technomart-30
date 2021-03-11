@@ -95,8 +95,6 @@ for (const cartClose of cartCloses) {
   });
 }
 
-
-
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     if (cartPopup.classList.contains('modal-window--show')) {
