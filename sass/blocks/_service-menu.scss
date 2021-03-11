@@ -30,7 +30,13 @@
 
   color: var(--white);
 
-  &:hover {
+  &--focus {
+    outline: none;
+    color: var(--basic-darkblue);
+    background-color: var(--white);
+  }
+
+  &:hover:not(.service-menu__link--focus) {
     background-color: var(--basic-dark);
   }
 

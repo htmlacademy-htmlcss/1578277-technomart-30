@@ -1,6 +1,7 @@
-const slides = document.querySelectorAll(".slider__container");
-const prevButton = document.querySelector(".slider__button--prev");
-const nextButton = document.querySelector(".slider__button--prev");
+const slides = document.querySelectorAll(".slider__container"),
+      prev = document.getElementById("btn-prev"),
+      next = document.getElementById("btn-next"),
+      dots = document.querySelectorAll(".slider__dot");
 
 const toggleClassForCollection = function (current, collection, className) {
   for (const element of collection) {
@@ -14,16 +15,17 @@ const toggleClassForCollection = function (current, collection, className) {
 
 let currentSlideIndex = 0;
 
-prevButton.onclick = function () {
+prev.onclick = function () {
   const tempSlideIndex = currentSlideIndex - 1;
   currentSlideIndex = (tempSlideIndex < 0) ? slides.length - 1 : tempSlideIndex;
   const nextSlide = slides[currentSlideIndex];
-  toggleClassForCollection(nextSlide, slides, "slider__container--hidden");
+  toggleClassForCollection(nextSlide, slides, "slider__container--active");
 };
 
-nextButton.onclick = function () {
+next.onclick = function () {
   const tempSlideIndex = currentSlideIndex + 1;
   currentSlideIndex = (tempSlideIndex === slides.length) ? 0 : tempSlideIndex;
   const nextSlide = slides[currentSlideIndex];
-  toggleClassForCollection(nextSlide, slides, "slider__container--hidden");
+  toggleClassForCollection(nextSlide, slides, "slider__container--active");
 };
+

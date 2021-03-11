@@ -4,14 +4,14 @@
 }
 
 .slider__container {
-  display: grid;
+  display: none;
   grid-template-rows: 104px 1fr 104px;
   grid-template-columns: repeat(8, 1fr);
 
   background-color: var(--basic-greylight);
 
-  &--hidden {
-    display: none;
+  &--active {
+    display: grid;
   }
 }
 
@@ -118,6 +118,8 @@
   background: var(--white);
   border-radius: 50%;
 
+  cursor: pointer;
+
   &--current {
     background: var(--basic-red);
     border: 2px solid var(--white);
@@ -136,40 +138,3 @@
   }
 }
 
-/* fade */
-
-.fade {
-  animation-fill-mode: backwards;
-  animation-timing-function: linear;
-  animation-duration: 300ms;
-}
-
-.fade-in {
-  animation-name: fade-in;
-}
-
-.fade-out {
-  animation-name: fade-in;
-}
-
-/* keyframes */
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 100%;
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 100%;
-  }
-
-  to {
-    opacity: 0;
-  }
-}

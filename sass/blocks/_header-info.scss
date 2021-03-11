@@ -3,15 +3,16 @@
   align-items: start;
 
   padding-top: 42px;
-  padding-bottom: 44px;
+  padding-bottom: 42px;
 }
 
 .header-info__text {
+  max-width: 197px;
   margin: 0 93px 0 30px;
 
   font-style: italic;
   font-size: 16px;
-  line-height: 23px;
+  line-height: 24px;
   color: var(--basic-red);
 }
 
@@ -27,7 +28,7 @@
 
 .header-info__tel {
   position: relative;
-  padding: 4px 42px 5px 71px;
+  padding: 8px 42px 8px 71px;
   align-items: center;
 
   font-weight: bold;
@@ -40,10 +41,11 @@
   &::before {
     content: " ";
     position: absolute;
-    top: 6px;
+    top: 10px;
     left: 37px;
     width: 20px;
     height: 19px;
+
     background-image: url("../img/icon/phone.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -56,7 +58,7 @@
 }
 
 .header-info__address {
-  margin: 9px 0 0;
+  margin: 11px 0 0;
 
   font-size: 14px;
   font-style: normal;

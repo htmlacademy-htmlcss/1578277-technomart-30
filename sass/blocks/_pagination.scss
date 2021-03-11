@@ -6,15 +6,19 @@
 }
 
 .pagination__item {
+  max-width: 38px;
   margin-right: 10px;
 
   &:last-child {
+    max-width: min-content;
     margin-right: 0;
   }
 }
 
 .pagination__link {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  max-width: 38px;
   padding: 10px 15px;
 
   font-size: 13px;
@@ -26,11 +30,14 @@
   border: 1px solid var(--border-pink);
   border-radius: 2px;
 
+  &:last-child {
+    max-width: min-content;
+  }
+
   &--current {
     color: var(--white);
     background-color: var(--basic-red);
     border-color: var(--basic-red);
-    ;
   }
 
   &:hover:not(.pagination__link--current) {

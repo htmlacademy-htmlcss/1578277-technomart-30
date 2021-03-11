@@ -2,8 +2,6 @@ const cartLinks = document.querySelectorAll(".card-good__button--buy");
 const cartPopup = document.querySelector(".modal-window--cart");
 const cartCloses = cartPopup.querySelectorAll(".js--close");
 
-
-
 for (let cartLink of cartLinks) {
   cartLink.addEventListener("click", function (evt) {
   evt.preventDefault();

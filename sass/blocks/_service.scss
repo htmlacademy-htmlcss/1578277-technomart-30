@@ -4,7 +4,7 @@
 }
 
 .service__wrapper {
-  padding-top: 64px;
+  padding-top: 65px;
 }
 
 .service__title {
@@ -23,6 +23,7 @@
 }
 
 .service__text {
+  max-width: 300px;
   margin: 0;
 
   font-size: 13px;
@@ -50,25 +51,25 @@
 }
 
 .service__desc {
+  display: none;
   min-height: 283px;
 
   background-position: right 20px;
   background-repeat: no-repeat;
 
+  &--active {
+    display: block;
+  }
 
   &--delivery {
     background-image: url("../img/service/delivery.png ");
   }
 
   &--guarantee {
-    display: none;
-
     background-image: url("../img/service/guarantee.png");
   }
 
   &--credit {
-    display: none;
-
     background-image: url("../img/service/credit.png");
   }
 }
